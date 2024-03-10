@@ -33,8 +33,7 @@ const About = () => {
           </div>
           <div>
             <p>
-              Leverage agile frameworks to provide a robust synopsis for high
-              level overviews iterative approaches to corporate.
+              Empowering young minds with knowledge and nourishment for a brighter future.
             </p>
           </div>
         </div>
@@ -48,8 +47,7 @@ const About = () => {
           </div>
           <div>
             <p>
-              Leverage agile frameworks to provide a robust synopsis for high
-              level overviews iterative approaches to corporate.
+              Extending a helping hand to communities through impactful outreach initiatives.
             </p>
           </div>
         </div>
@@ -63,8 +61,7 @@ const About = () => {
           </div>
           <div>
             <p>
-              Leverage agile frameworks to provide a robust synopsis for high
-              level overviews iterative approaches to corporate.
+              Fueling dreams with opportunities through grants and scholarships for aspiring minds.
             </p>
           </div>
         </div>
