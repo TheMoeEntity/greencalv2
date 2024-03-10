@@ -27,27 +27,11 @@ export default function App() {
                             <p>Nutristionist, Abuja, Nigeria</p>
                             <p className="text-muted">
                                 <MDBIcon fas icon="quote-left" className="pe-2" />
-                                I've witnessed the impact of Greencal Foundation's food outreach programs. They not only provide nourishment but also promote a healthy community, ensuring no child goes to bed hungry.
+                                {`I've `}witnessed the impact of Greencal {`Foundation's`} food outreach programs. They not only provide nourishment but also promote a healthy community, ensuring no child goes to bed hungry.
                             </p>
                         </MDBCol>
                     </MDBRow>
-                    <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
-                        <li>
-                            <MDBIcon fas icon="star" size="sm" />
-                        </li>
-                        <li>
-                            <MDBIcon fas icon="star" size="sm" />
-                        </li>
-                        <li>
-                            <MDBIcon fas icon="star" size="sm" />
-                        </li>
-                        <li>
-                            <MDBIcon fas icon="star" size="sm" />
-                        </li>
-                        <li>
-                            <MDBIcon far icon="star" size="sm" />
-                        </li>
-                    </ul>
+
                 </MDBCarouselItem>
 
                 <MDBCarouselItem className="text-center">
@@ -68,23 +52,7 @@ export default function App() {
                             </p>
                         </MDBCol>
                     </MDBRow>
-                    <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
-                        <li>
-                            <MDBIcon fas icon="star" size="sm" />
-                        </li>
-                        <li>
-                            <MDBIcon fas icon="star" size="sm" />
-                        </li>
-                        <li>
-                            <MDBIcon fas icon="star" size="sm" />
-                        </li>
-                        <li>
-                            <MDBIcon fas icon="star" size="sm" />
-                        </li>
-                        <li>
-                            <MDBIcon far icon="star" size="sm" />
-                        </li>
-                    </ul>
+
                 </MDBCarouselItem>
 
                 <MDBCarouselItem className="text-center">
@@ -100,27 +68,11 @@ export default function App() {
                             <p>Education Advocate, Kano, Nigeria</p>
                             <p className="text-muted">
                                 <MDBIcon fas icon="quote-left" className="pe-2" />
-                                As an education advocate, I applaud Greencal Foundation's commitment to empowering young minds. The scholarships offered are instrumental in bridging the gap and creating opportunities for deserving students.
+                                As an education advocate, I applaud Greencal {`Foundation's`} commitment to empowering young minds. The scholarships offered are instrumental in bridging the gap and creating opportunities for deserving students.
                             </p>
                         </MDBCol>
                     </MDBRow>
-                    <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
-                        <li>
-                            <MDBIcon fas icon="star" size="sm" />
-                        </li>
-                        <li>
-                            <MDBIcon fas icon="star" size="sm" />
-                        </li>
-                        <li>
-                            <MDBIcon fas icon="star" size="sm" />
-                        </li>
-                        <li>
-                            <MDBIcon fas icon="star" size="sm" />
-                        </li>
-                        <li>
-                            <MDBIcon far icon="star" size="sm" />
-                        </li>
-                    </ul>
+
                 </MDBCarouselItem>
             </MDBCarousel>
         </MDBContainer>

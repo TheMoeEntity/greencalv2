@@ -80,7 +80,7 @@ const DonationsPage = () => {
             </div>
             <div className={styles.dons}>
                 <div className={styles.donationsForm}>
-                    <h2>Gift an Education… Make a Life Better!</h2>
+                    <h2 className="mb-5">Support GREENCAL Foundation</h2>
                     <div className={styles.runningDonation}>
                         <div className={styles.currency}>
                             $

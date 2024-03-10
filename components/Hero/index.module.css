@@ -80,7 +80,7 @@
     width: 100%;
     position: relative;
     padding: 50px 20px;
-    min-height: 1500px;
+    min-height: 1200px;
 }
 
 .donationsForm {
@@ -209,6 +209,10 @@
 
     .maps {
         height: 250px;
+    }
+
+    .dons {
+        min-height: 1500px;
     }
 }
 

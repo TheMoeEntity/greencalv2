@@ -58,29 +58,13 @@ const Header = () => {
             &times;
           </div>
           <ul>
-            <li>
-              <span>Home</span>
-              <span>
-                <i className="fa fa-plus"></i>
-              </span>
-            </li>
-            <li>About</li>
-            <li>
-              <span>Services</span>
-              <span>
-                <i className="fa fa-plus"></i>
-              </span>
-            </li>
-            <li>
-              <span>Pages</span>
-              <span>
-                <i className="fa fa-plus"></i>
-              </span>
-            </li>
-            <li>Blog</li>
-            <li>
-              <Link href={'/contact'}>Contact</Link>
-            </li>
+            {
+              links.map((x, i) => (
+                <li key={i}>
+                  <Link href={'/' + x.href}>{x.name}</Link>
+                </li>
+              ))
+            }
           </ul>
         </div>
       </div>
@@ -142,9 +126,9 @@ const Header = () => {
           </ul>
         </div>
         <div className={styles.search}>
-          <div>
+          {/* <div>
             <i className="fa-solid fa-magnifying-glass"></i>
-          </div>
+          </div> */}
           <div>
             <a
               target={`_blank`}
