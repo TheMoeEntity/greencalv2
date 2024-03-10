@@ -145,11 +145,11 @@ const Hero = () => {
                         },
                       },
                     }}
-                    style={{ float: "left", marginTop: '150px' }}
+                    style={{ float: "left" }}
                     className={styles.caption}
                   >
                     <h1>
-                      Giving help To Those Who Need It.
+                      Help for Everyone!
                     </h1>
                     <p>
                       Empowering lives through compassionate giving. Join Greencal Foundation in making a positive impact in Abakaliki, Ebonyi State, Nigeria.
