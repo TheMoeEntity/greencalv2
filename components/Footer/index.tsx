@@ -98,7 +98,7 @@ const Footer = () => {
             <li>About <i className="fas fa-circle"></i></li>
             <li>Donate <i className="fas fa-circle"></i></li>
             <li>Gallery <i className="fas fa-circle"></i></li>
-            <li><Link href="/contact">Contact</Link></li>
+            <li>Contact <i className="fas fa-circle"></i></li>
           </ul>
         </div>
       </div>

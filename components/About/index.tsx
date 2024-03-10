@@ -104,7 +104,7 @@ const About = () => {
           <p>
             At Greencal Foundation, {`we're`} passionate about transforming lives in Abakaliki, Ebonyi State. With a focus on education, food outreach, and scholarships, we strive to create a brighter future for children, fostering a community of empowerment and growth.
           </p>
-          <button onClick={() => push('/about')}>KNOW MORE</button>
+          <button style={{ color: 'white' }} onClick={() => push('/about')}>KNOW MORE</button>
         </div>
       </div>
     </div>
