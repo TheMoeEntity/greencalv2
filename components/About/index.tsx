@@ -102,7 +102,7 @@ const About = () => {
           <h4>&nbsp; &nbsp; &nbsp;WHO WE ARE??</h4>
           <h2>Empowering Lives, Building Futures: Our Commitment to Positive Change.</h2>
           <p>
-            At Greencal Foundation, we're passionate about transforming lives in Abakaliki, Ebonyi State. With a focus on education, food outreach, and scholarships, we strive to create a brighter future for children, fostering a community of empowerment and growth.
+            At Greencal Foundation, {`we're`} passionate about transforming lives in Abakaliki, Ebonyi State. With a focus on education, food outreach, and scholarships, we strive to create a brighter future for children, fostering a community of empowerment and growth.
           </p>
           <button onClick={() => push('/about')}>KNOW MORE</button>
         </div>

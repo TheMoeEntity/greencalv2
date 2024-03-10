@@ -83,7 +83,7 @@ const AboutPage = () => {
                     <div className="row mb-5">
                         <div className="col-md-12 mb-5"><h1>Our History</h1></div>
                         <div className="col-md-6">
-                            <p className="lead">At Greencal Foundation, we're passionate about transforming lives in Abakaliki, Ebonyi State. With a focus on education, food outreach, and scholarships, we strive to create a brighter future for children, fostering a community of empowerment and growth</p>
+                            <p className="lead">At Greencal Foundation, {`we're`} passionate about transforming lives in Abakaliki, Ebonyi State. With a focus on education, food outreach, and scholarships, we strive to create a brighter future for children, fostering a community of empowerment and growth</p>
                             <p>Quia ratione, eum harum ab similique mollitia, nisi itaque vel voluptas ipsam dolore perferendis. Deleniti voluptatum error possimus ipsum, sed, obcaecati. Sit unde quia eum repudiandae molestiae reprehenderit harum nesciunt.</p>
 
                         </div>
