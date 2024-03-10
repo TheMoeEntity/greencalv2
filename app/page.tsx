@@ -1,6 +1,8 @@
 import Hero from "@/components/Hero";
 import styles from "./page.module.css";
 import About from "@/components/About";
+import FundRaisers from "@/components/FundRaisers";
+import Testimonials from "@/components/Testimonials";
 
 
 export default function Home() {
@@ -8,6 +10,8 @@ export default function Home() {
     <main className={styles.main}>
       <Hero />
       <About />
+      <FundRaisers />
+      <Testimonials />
     </main>
   );
 }

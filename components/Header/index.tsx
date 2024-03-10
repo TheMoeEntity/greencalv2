@@ -4,9 +4,12 @@ import logo from "../../public/images/greencal_logo.png";
 import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
 import Link from "next/link";
+import { Helpers } from "@/Helpers";
+import { useLinks } from "@/Helpers/hooks";
 
 const Header = () => {
   const [sidebar, setSideBar] = useState(false);
+  const { links, LinkAction } = useLinks();
   const sideContent = useRef<HTMLDivElement>(null);
   const [sticky, setSticky] = useState("");
   const headerRef = useRef<HTMLDivElement>(null);
@@ -44,23 +47,6 @@ const Header = () => {
     }, 400);
   };
 
-  const more = useRef<HTMLLIElement>(null);
-  const inner = useRef<HTMLUListElement>(null);
-  const showMore = () => {
-    if (!more.current) { return }
-    const elemHeight = more.current.scrollHeight;
-    const height = more.current.style.maxHeight;
-    more.current.style.maxHeight =
-      height === "" || height === "0px" ? `${elemHeight}px` : "0";
-  };
-  const innerAction = () => {
-    if (!inner.current) { return }
-    const elemHeight = inner.current.scrollHeight;
-    const height = inner.current.style.maxHeight;
-    inner.current.style.maxHeight =
-      height === "" || height === "0px" ? `${elemHeight}px` : "0";
-  };
-
   return (
     <div className={styles.header}>
       <div
@@ -79,31 +65,11 @@ const Header = () => {
               </span>
             </li>
             <li>About</li>
-            <li onClick={showMore}>
+            <li>
               <span>Services</span>
               <span>
                 <i className="fa fa-plus"></i>
               </span>
-            </li>
-            <li ref={more} className={styles.more}>
-              <ul>
-                <li>Service Style 1</li>
-                <li>Service Style 2</li>
-                <li onClick={innerAction}>
-                  <span>Services Style 3</span>
-                  <span>
-                    <i className="fa fa-plus"></i>
-                  </span>
-                </li>
-                <ul ref={inner} className={styles.inner}>
-                  <li>General Construction</li>
-                  <li>Property Maintenance</li>
-                  <li>Preconstruction</li>
-                  <li>Virtual Design and Build</li>
-                  <li>Project management</li>
-                  <li>Design Build</li>
-                </ul>
-              </ul>
             </li>
             <li>
               <span>Pages</span>
@@ -125,22 +91,22 @@ const Header = () => {
       >
         <div>
           <div>
-            <i className="fa fa-envelope"></i> info@konstruk.com
+            <i className="fa fa-envelope"></i> info@greencal.com
             &nbsp;&nbsp;&nbsp;&nbsp;|
           </div>
           <div>
-            <i className="fa fa-phone"></i> (+1) 7854-333-222
+            <i className="fa fa-phone"></i> (+234) 807 548 9362
             &nbsp;&nbsp;&nbsp;&nbsp;|
           </div>
           <div>
-            <i className="fa fa-marker"></i> 31 New Street, NY, USA
-            &nbsp;&nbsp;&nbsp;&nbsp;|
+            <i className="fa fa-marker"></i>Mile 50, Abakaliki, Ebonyi, Nigeria
+            &nbsp;&nbsp;&nbsp;
           </div>
         </div>
 
         <div>
           <div>
-            <i style={{ color: "#FFB703" }} className="fa fa-clock"></i> Hours:
+            <i style={{ color: "#0C4949" }} className="fa fa-clock"></i> Hours:
             Mon-Fri: 9.00 am - 7.00 pm &nbsp;&nbsp;&nbsp;&nbsp;|
             <i className="fa-brands fa-twitter"></i>
             <i className="fa-brands fa-instagram"></i>
@@ -164,92 +130,30 @@ const Header = () => {
           </Link>
         </div>
         <div className={styles.links}>
-          <ul>
-            <li>
-              <Link href={"/"}> Home + </Link>
-              <div className={styles.dropdn}>
-                <ul>
-                  <li className={styles.multiple}>
-                    Single Pages +
-                    <div className={styles.mores}>
-                      <ul>
-                        <li>Singin Out Loud</li>
-                        <li>Nothing can stop me</li>
-                        <li>Service Single 3</li>
-                        <li>Lorem Ipsum</li>
-                        <li>Dolor SIt </li>
-                        <li>Moses Pages</li>
-                        <li>Sex Playlist</li>
-                        <li>Bunch of words</li>
-                        <li>Sia is the greatest</li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li className={styles.multiple}>
-                    Multiple Pages +
-                    <div className={styles.mores}>
-                      <ul>
-                        <li>Services Style 1</li>
-                        <li>Services Style 2</li>
-                        <li>Service Single 3</li>
-                        <li>Lorem Ipsum</li>
-                        <li>Dolor SIt </li>
-                        <li>Moses Pages</li>
-                        <li>Sex Playlist</li>
-                        <li>Bunch of words</li>
-                        <li>Sia is the greatest</li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li>About</li>
-            <li>
-              Services +
-              <div className={styles.dropdn}>
-                <ul>
-                  <li>Services Style 1</li>
-                  <li>Services Style 2</li>
-                  <li>Service Single</li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              Pages +
-              <div className={styles.dropdn}>
-                <ul>
-                  <li className={styles.multiple}>
-                    Team
-                    <div className={styles.mores}>
-                      <ul>
-                        <li>Team Style 1</li>
-                        <li>Team Style 2</li>
-                        <li>Team Style 3</li>
-                        <li>Team Style 4</li>
-                        <li>Team Style 5 </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li>Projects</li>
-                  <li>Pricing Plan</li>
-                  <li>Faq</li>
-                  <li>Gallery</li>
-                  <li>Shop</li>
-                </ul>
-              </div>
-            </li>
-            <li>Blog </li>
-            <li>
-              <Link href={"/contact"}>Contact</Link>
-            </li>
+          <ul >
+            {
+              links.map((x, i) =>
+              (
+                <li key={i}>
+                  <Link href={'/' + x.href}> {x.name} </Link>
+                </li>
+              ))
+            }
           </ul>
         </div>
         <div className={styles.search}>
           <div>
             <i className="fa-solid fa-magnifying-glass"></i>
           </div>
-          <div>{`LETS`} TALK</div>
+          <div>
+            <a
+              target={`_blank`}
+              rel="noopener noreferrer"
+              href="https://wa.me/+2348075489362"
+            >
+              {`LETS`} TALK
+            </a>
+          </div>
         </div>
         <div onClick={show} className={styles.bars}>
           <i className="fa-solid fa-bars"></i>

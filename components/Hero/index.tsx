@@ -149,15 +149,13 @@ const Hero = () => {
                     className={styles.caption}
                   >
                     <h1>
-                      We build strong <br /> and durable things.
+                      Giving help To Those Who Need It.
                     </h1>
                     <p>
-                      No matter where or what you want to build, we mobilize
-                      the right experts to drive value and realize your
-                      project consistent goals.
+                      Empowering lives through compassionate giving. Join Greencal Foundation in making a positive impact in Abakaliki, Ebonyi State, Nigeria.
                     </p>
 
-                    <Link href={'/contact'}><button>DISCOVER MORE</button></Link>
+                    <Link href={'/donate'}><button>DONATE NOW</button></Link>
                   </motion.div>
 
                 ) : (
@@ -189,15 +187,13 @@ const Hero = () => {
                     }}
                     className={styles.caption}>
                     <h1>
-                      We build stong <br /> and durable things.
+                      Charity is Priority.
                     </h1>
                     <p>
-                      No matter where or what you want to build, we mobilize the
-                      right experts to drive value and realize your project
-                      consistent goals.
+                      Empowering lives through compassionate giving. Join Greencal Foundation in making a positive impact in Abakaliki, Ebonyi State, Nigeria.
                     </p>
 
-                    <Link href={'/contact'}><button>DISCOVER MORE</button></Link>
+                    <Link href={'/donate'}><button>DONATE NOW</button></Link>
                   </motion.div>
                 )}
               </div>
