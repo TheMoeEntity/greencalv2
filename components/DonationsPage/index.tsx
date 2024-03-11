@@ -138,7 +138,7 @@ const DonationsPage = () => {
                         <div className={styles.currency}>
                             $
                         </div>
-                        <input ref={inputRef} value={currPrice} onChange={e => setCurrPrice((e.target.value))} className={styles.amountInput} />
+                        <input type="number" ref={inputRef} value={currPrice} onChange={e => setCurrPrice((e.target.value))} className={styles.amountInput} />
                     </div>
                     <div className={styles.amounts}>
                         {
