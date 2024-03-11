@@ -4,6 +4,7 @@ import "react-slideshow-image/dist/styles.css";
 import { Slide } from "react-slideshow-image";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useRef, useState } from "react";
 
 const DonationsPage = () => {
     const divStyle = {
@@ -17,6 +18,58 @@ const DonationsPage = () => {
             caption: "Slide 1",
         },
     ];
+    const [method, setMethod] = useState<{ amount: string, isActive: boolean }[]>([
+        {
+            amount: "Credit Card",
+            isActive: true
+        },
+        {
+            amount: "PayPal",
+            isActive: false
+        },
+        {
+            amount: "PayStack",
+            isActive: false
+        },
+        {
+            amount: "Offline Donation",
+            isActive: false
+        },
+    ])
+    const [amounts, setAmounts] = useState<{ amount: number | string, isActive: boolean }[]>([
+        {
+            amount: 10,
+            isActive: true
+        },
+        {
+            amount: 30,
+            isActive: false
+        },
+        {
+            amount: 50,
+            isActive: false
+        },
+        {
+            amount: 100,
+            isActive: false
+        },
+        {
+            amount: 'CUSTOM AMOUNT',
+            isActive: false
+        }
+    ])
+    const inputRef = useRef<HTMLInputElement>(null)
+    const [currPrice, setCurrPrice] = useState<number | string>(10)
+    const setCurrAmount = (name: string | number) => {
+        setAmounts(state =>
+            state.map((item) => item.amount === name ? { ...item, isActive: true } : { ...item, isActive: false }))
+        if (typeof name === 'number') {
+            setCurrPrice(name)
+        } else {
+            inputRef.current?.focus()
+        }
+
+    }
     return (
         <div>
             <div className={styles.hero}>
@@ -85,22 +138,27 @@ const DonationsPage = () => {
                         <div className={styles.currency}>
                             $
                         </div>
-                        <input defaultValue={30000} className={styles.amountInput} />
+                        <input ref={inputRef} value={currPrice} onChange={e => setCurrPrice((e.target.value))} className={styles.amountInput} />
                     </div>
                     <div className={styles.amounts}>
-                        <div>$30k</div>
-                        <div>$30k</div>
-                        <div>$30k</div>
-                        <div>$30k</div>
-                        <div>CUSTOM AMOUNT</div>
+                        {
+                            amounts.map((x, i) => (
+                                i === amounts.length - 1 ? (
+                                    <div className={x.isActive ? styles.active : ''} key={i} onClick={() => setCurrAmount(x.amount)}>{x.amount}</div>
+                                ) :
+                                    (<div className={x.isActive ? styles.active : ''} key={i} onClick={() => setCurrAmount(x.amount)}>${x.amount}K</div>)
+                            ))
+                        }
                     </div>
                     <hr />
                     <h4 className="mt-5">Select Payment Method</h4>
                     <div className={styles.amounts}>
-                        <div>Credit Card</div>
-                        <div>PayPal</div>
-                        <div>PayStack</div>
-                        <div>Offline Donation</div>
+                        {
+                            method.map((x, i) => (
+                                <div onClick={() => setMethod(state =>
+                                    state.map((item) => x.amount === item.amount ? { ...item, isActive: true } : { ...item, isActive: false }))} className={x.isActive ? styles.active : ''} key={i}>{x.amount}</div>
+                            ))
+                        }
                     </div>
                     <hr />
                     <form>

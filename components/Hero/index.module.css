@@ -157,11 +157,13 @@
     color: black;
     font-weight: bolder;
     cursor: pointer;
+    transition: 0.5s;
 }
 
-.amounts>div:first-child {
+.amounts>div.active {
     color: white;
     background-color: #0C4949;
+    transition: 0.5s;
 }
 
 @media screen and (max-width:820px) {
