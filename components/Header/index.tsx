@@ -133,7 +133,7 @@ const Header = () => {
             <a
               target={`_blank`}
               rel="noopener noreferrer"
-              href="https://wa.me/+2348075489362"
+              href="https://wa.me/+2348116177509"
             >
               {`LETS`} TALK
             </a>
