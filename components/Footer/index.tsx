@@ -91,7 +91,7 @@ const Footer = () => {
       </div>
 
       <div className={styles.copyright}>
-        <div>© 2023 Greencal Foundation.</div>
+        <div>© 2024 Greencal Foundation.</div>
         <div>
           <ul>
             <li>Home <i className="fas fa-circle"></i></li>

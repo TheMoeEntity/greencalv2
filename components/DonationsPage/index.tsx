@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { CSSProperties, useRef, useState } from "react";
 import { useCustomHero } from "@/Helpers/hooks";
+import Script from "next/script";
 
 const DonationsPage = () => {
     const { customHero } = useCustomHero(Link, "DONATIONS", styles, motion, "outreach2.jpg")
@@ -156,6 +157,7 @@ const DonationsPage = () => {
                     </form>
                 </div>
             </div>
+            <Script src="https://js.paystack.co/v1/inline.js" />
         </div>
     )
 }
