@@ -27,7 +27,7 @@ const Footer = () => {
           <p>
             Giving help To Those Who Need It. Charity works make the world a better place.
           </p>
-          <strong>Opening Hours :</strong> Monday Sat: 9am to 6pm
+          <strong>Opening Hours :</strong> Monday Sat: 8am to 5pm
 
           <div className={styles.icons}>
             <i className="fa-brands fa-facebook"></i>
@@ -42,7 +42,7 @@ const Footer = () => {
             <div>
               <i className="fas fa-map-marker"></i>
             </div>
-            <div>Nepa Junction, Mile 50, Abakaliki, Ebonyi, Nigeria</div>
+            <div>Opinion Nigeria LTD prince and princess ishieke Abakaliki</div>
           </div>
 
           <div>
@@ -58,7 +58,7 @@ const Footer = () => {
               <i className="fa-solid fa-envelope"></i>
             </div>
             <div>
-              info@greencal.com, info.greencal@yahoo.com</div>
+              greencalfoundation@gmail.com</div>
           </div>
         </div>
         <div>

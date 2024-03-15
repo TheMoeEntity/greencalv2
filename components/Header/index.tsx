@@ -75,15 +75,11 @@ const Header = () => {
       >
         <div>
           <div>
-            <i className="fa fa-envelope"></i> info@greencal.com
+            <i className="fa fa-envelope"></i> greencalfoundation@gmail.com
             &nbsp;&nbsp;&nbsp;&nbsp;|
           </div>
           <div>
-            <i className="fa fa-phone"></i> (+234) 807 548 9362
-            &nbsp;&nbsp;&nbsp;&nbsp;|
-          </div>
-          <div>
-            <i className="fa fa-marker"></i>Mile 50, Abakaliki, Ebonyi, Nigeria
+            <i className="fas fa-map-marker"></i>Opinion Nigeria LTD prince and princess ishieke Abakaliki
             &nbsp;&nbsp;&nbsp;
           </div>
         </div>
@@ -91,7 +87,7 @@ const Header = () => {
         <div>
           <div>
             <i style={{ color: "#0C4949" }} className="fa fa-clock"></i> Hours:
-            Mon-Fri: 9.00 am - 7.00 pm &nbsp;&nbsp;&nbsp;&nbsp;|
+            Mon-Fri: 8.00 am - 5.00 pm &nbsp;&nbsp;&nbsp;&nbsp;|
             <i className="fa-brands fa-twitter"></i>
             <i className="fa-brands fa-instagram"></i>
             <i className="fa-brands fa-facebook"></i>
