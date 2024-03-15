@@ -40,7 +40,7 @@ const Footer = () => {
           <h2 style={{ marginLeft: '30px' }}>CONTACT INFO</h2>
           <div>
             <div>
-              <i className="fa-solid fa-phone"></i>
+              <i className="fas fa-map-marker"></i>
             </div>
             <div>Nepa Junction, Mile 50, Abakaliki, Ebonyi, Nigeria</div>
           </div>
@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
           <div>
             <div style={{ width: '50px' }}>
-              <i className="fa-solid fa-phone"></i>
+              <i className="fa-solid fa-envelope"></i>
             </div>
             <div>
               info@greencal.com, info.greencal@yahoo.com</div>
@@ -85,7 +85,7 @@ const Footer = () => {
           </div>
           <div>
             <i className="fa fa-angle-right"></i>
-            Design Build
+            Medical outreach
           </div>
         </div>
       </div>

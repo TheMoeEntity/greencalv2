@@ -13,6 +13,9 @@
     "bootstrap": "^5.3.3",
     "firebase": "^10.8.1",
     "framer-motion": "^11.0.8",
+    "imagesloaded": "^5.0.0",
+    "lightgallery": "^2.7.2",
+    "masonry-layout": "^4.2.2",
     "mdb-react-ui-kit": "^7.2.0",
     "next": "14.1.0",
     "next-gallery": "^2.1.0",
@@ -26,6 +29,8 @@
     "react-slideshow-image": "^4.3.1"
   },
   "devDependencies": {
+    "@types/imagesloaded": "^4.1.6",
+    "@types/masonry-layout": "^4.2.7",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

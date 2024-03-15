@@ -4,6 +4,8 @@ import "react-slideshow-image/dist/styles.css";
 import { Slide } from "react-slideshow-image";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import MainGallery from "./MainGallery";
+
 
 const GalleryPage = () => {
     const divStyle = {
@@ -79,7 +81,7 @@ const GalleryPage = () => {
                 </div>
             </div>
             <div className={styles.gallery}>
-
+                <MainGallery />
             </div>
         </div>
     )

@@ -100,7 +100,6 @@ export class Helpers {
     val: string,
     e: FormEvent<HTMLFormElement>,
     enqueueSnackbar: any,
-    selectedOption: string
   ) => {
     e.preventDefault();
     const data = {
@@ -114,12 +113,11 @@ export class Helpers {
         1 as unknown as keyof typeof e.target
         ] as unknown as HTMLInputElement
       ).value,
-      phone: (
+      subject: (
         e.target[
         2 as unknown as keyof typeof e.target
         ] as unknown as HTMLInputElement
       ).value,
-      choise: selectedOption,
       message: val,
     };
 
@@ -128,13 +126,8 @@ export class Helpers {
         variant: "error",
       });
       return;
-    } else if (data.phone === "") {
-      enqueueSnackbar("Specify a phone number we can reach you with", {
-        variant: "error",
-      });
-      return;
-    } else if (selectedOption === "--Choose--") {
-      enqueueSnackbar("Select a service from the options", {
+    } else if (data.subject === "") {
+      enqueueSnackbar("Specify a subject", {
         variant: "error",
       });
       return;

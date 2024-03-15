@@ -178,6 +178,14 @@
         margin-top: 60px;
     }
 
+    .runningDonation {
+        width: 220px;
+    }
+
+    .amountInput {
+        width: 130px;
+    }
+
     .sect {
         height: 500px !important;
         background-position: bottom;

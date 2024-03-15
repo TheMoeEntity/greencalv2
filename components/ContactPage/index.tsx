@@ -4,8 +4,12 @@ import "react-slideshow-image/dist/styles.css";
 import { Slide } from "react-slideshow-image";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { Helpers } from "@/Helpers";
+import { useState } from "react";
+import { useSnackbar } from "notistack";
 
 const ContactPage = () => {
+
     const divStyle = {
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -17,6 +21,9 @@ const ContactPage = () => {
             caption: "Slide 1",
         },
     ];
+    const [status, setStatus] = useState('SEND MESSAGE')
+    const [val, setVal] = useState('')
+    const { enqueueSnackbar } = useSnackbar();
     return (
         <div>
             <div className={styles.hero}>
@@ -83,7 +90,7 @@ const ContactPage = () => {
                 <div className="container">
                     <div className="row block-9">
                         <div className="col-md-6 pr-md-5">
-                            <form>
+                            <form onSubmit={e => Helpers.handleSubmit(setStatus, setVal, val, e, enqueueSnackbar)}>
                                 <div className="form-group my-4">
                                     <label className="my-3" htmlFor="">Full Name</label>
                                     <input type="text" className="form-control px-3 py-3" placeholder="Enter Your Name" />
@@ -98,7 +105,7 @@ const ContactPage = () => {
                                 </div>
                                 <div className="form-group my-4">
                                     <label className="my-3" htmlFor="">Talk to us</label>
-                                    <textarea name="" id="" rows={10} className="form-control px-3 py-3" placeholder="Message"></textarea>
+                                    <textarea onChange={(e) => setVal(e.target.value)} name="" id="" rows={10} className="form-control px-3 py-3" placeholder="Message"></textarea>
                                 </div>
                                 <div className="form-group my-4">
                                     <input style={{ background: '#0C4949', color: 'white' }} type="submit" value="Send Message" className="btn py-3 px-5" />
