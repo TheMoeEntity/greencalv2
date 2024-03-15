@@ -104,7 +104,7 @@ const About = () => {
           <p>
             Greencal Foundation is a non-profit organization based in Abakaliki, Ebonyi State, Nigeria. We are dedicated to improving the lives of those facing illness, hardship, and limited opportunities.
           </p>
-          <p>At Greencal Foundation, we're passionate about transforming lives in Abakaliki, Ebonyi State...</p>
+          <p>At Greencal Foundation, {`we're `} passionate about transforming lives in Abakaliki, Ebonyi State...</p>
           <button style={{ color: 'white' }} onClick={() => push('/about')}>KNOW MORE</button>
         </div>
       </div>

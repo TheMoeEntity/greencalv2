@@ -87,7 +87,7 @@ const AboutPage = () => {
                             <h3 className="h3">A Story of Inspiration</h3>
                             <p>Greencal Foundation was born out of a deeply personal experience. Our founder, Obinna Adum, was deeply affected by the passing of his mother, Mrs. Juliana Calista Adum. A renowned philanthropist herself, Mrs. Adum dedicated her life to helping others in need.
                                 When she fell ill, Obinna was inspired to create a lasting legacy in her honor.</p>
-                            <p>Greencal Foundation serves as a way to continue Mrs. Adum's incredible work and provide the support Obinna would have wanted for her.</p>
+                            <p>Greencal Foundation serves as a way to continue Mrs.{` Adum's`} incredible work and provide the support Obinna would have wanted for her.</p>
                         </div>
                         <div className="col-md-6">
 
@@ -102,7 +102,7 @@ const AboutPage = () => {
 
                             <h3 className="h3 mt-4">Empowering Our Community</h3>
                             <p>
-                                At Greencal Foundation, we're passionate about transforming lives in Abakaliki, Ebonyi State. With a focus on education, food outreach, and scholarships, we strive to create a brighter future for children, fostering a community of empowerment and growth. We believe that by investing in education and basic needs, we can equip the next generation to overcome challenges and reach their full potential.
+                                At Greencal Foundation, {`we're`} passionate about transforming lives in Abakaliki, Ebonyi State. With a focus on education, food outreach, and scholarships, we strive to create a brighter future for children, fostering a community of empowerment and growth. We believe that by investing in education and basic needs, we can equip the next generation to overcome challenges and reach their full potential.
                             </p> <br />
 
 
