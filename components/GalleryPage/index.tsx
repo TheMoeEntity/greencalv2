@@ -81,7 +81,7 @@ const GalleryPage = () => {
                 </div>
             </div>
             <div className={styles.gallery}>
-                <MainGallery />
+                {/* <MainGallery /> */}
             </div>
         </div>
     )
