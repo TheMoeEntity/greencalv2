@@ -85,29 +85,29 @@ const EventsPage = () => {
                                     The essay competition format provides a stimulating platform for students to showcase their critical thinking, writing skills, and knowledge. By encouraging research and well-developed arguments, Greencal Foundation fosters a love of learning that extends beyond the classroom. This approach equips students with valuable skills that will benefit them throughout their academic careers and beyond.</p>
                                 <h2 className="section-heading">Building a Brighter Future</h2>
                                 <p>
-                                    Greencal Foundation believes that education is the cornerstone of individual and societal development. By investing in the next generation of scholars, the foundation empowers students to overcome challenges, achieve their goals, and contribute meaningfully to their communities. The annual essay competition is a significant step towards achieving this goal, ensuring that financial constraints do not hinder a student's pursuit of knowledge.</p>
+                                    Greencal Foundation believes that education is the cornerstone of individual and societal development. By investing in the next generation of scholars, the foundation empowers students to overcome challenges, achieve their goals, and contribute meaningfully to their communities. The annual essay competition is a significant step towards achieving this goal, ensuring that financial constraints do not hinder a {`student's`} pursuit of knowledge.</p>
                                 <h2 className="section-heading">Investing in the Future: Scholarships for SSCE/NECO Exams</h2>
-                                <p>For graduating secondary school students preparing for their SSCE or NECO exams, Greencal Foundation's essay competition provides a unique opportunity.
+                                <p>For graduating secondary school students preparing for their SSCE or NECO exams, Greencal {`Foundation's`} essay competition provides a unique opportunity.
                                     High-performing students can win scholarships that cover the cost of their WAEC or NECO exam fees.</p>
                                 <blockquote className="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. </blockquote>
                                 <p> This critical support removes a significant financial hurdle, allowing students to focus on their studies
                                     and confidently approach their exams</p>
                                 <h2 className="section-heading">Encouraging a Love of Learning: School Fee Support</h2>
                                 <p>
-                                    Greencal Foundation recognizes the importance of fostering a love of learning throughout a student's academic journey. Beyond the crucial exam years, the foundation also holds an annual essay competition for students in other class levels. Winners in this category receive scholarships to help cover their school fees, alleviating the financial burden on families and allowing students to continue their education without interruption.
+                                    Greencal Foundation recognizes the importance of fostering a love of learning throughout a {`student's`} academic journey. Beyond the crucial exam years, the foundation also holds an annual essay competition for students in other class levels. Winners in this category receive scholarships to help cover their school fees, alleviating the financial burden on families and allowing students to continue their education without interruption.
 
                                 </p>
 
                                 <h2 className="section-heading">Celebrating Success: Disbursement Ceremony</h2>
 
-                                <p>On February 21st, 2024, Greencal Foundation held a ceremony to disburse funds to the winners of the 2023 essay competition. The event took place at New Covenant College Odomoke, Ishieke, Ebonyi State, Nigeria. It was a joyous occasion to celebrate the students' achievements and acknowledge their hard work.</p>
+                                <p>On February 21st, 2024, Greencal Foundation held a ceremony to disburse funds to the winners of the 2023 essay competition. The event took place at New Covenant College Odomoke, Ishieke, Ebonyi State, Nigeria. It was a joyous occasion to celebrate the {`students' `}achievements and acknowledge their hard work.</p>
 
                                 <h2 className="section-heading mb-4">A Commitment to Education</h2>
 
                                 <a href="#!"><img className="img-fluid" src="/images/essay.jpg" alt="..." /></a>
-                                <span className="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
+                                <span className="caption text-muted">To go places and do things that have never been done before – {`that’s `}what living is all about.</span>
                                 <p className="my-4">
-                                    Greencal Foundation's annual essay competition is a testament to the organization's unwavering commitment to education. By providing scholarships and fostering a culture of academic excellence, Greencal Foundation empowers students to reach their full potential and pave the way for a brighter future.
+                                    Greencal {`Foundation's`} annual essay competition is a testament to the {`organization's`} unwavering commitment to education. By providing scholarships and fostering a culture of academic excellence, Greencal Foundation empowers students to reach their full potential and pave the way for a brighter future.
                                 </p>
                             </div>
                         </div>
