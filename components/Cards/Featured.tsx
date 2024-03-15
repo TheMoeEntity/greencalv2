@@ -29,7 +29,7 @@ const FeaturedCard = ({
             Greencal Foundation Uplifts Students Through Annual Essay Competition.
           </h5>
         </div>
-        <div><p>For graduating secondary school students preparing for their SSCE or NECO exams, Greencal Foundation's essay competition provides a unique opportunity...</p></div>
+        <div><p>For graduating secondary school students preparing for their SSCE or NECO exams, Greencal {`Foundation's`} essay competition provides a unique opportunity...</p></div>
         <div style={{ color: "gray" }}>
           {/* $23,000 raised */}
           View event
