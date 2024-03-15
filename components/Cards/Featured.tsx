@@ -1,10 +1,7 @@
 import styles from "./cards.module.css";
-import man5 from "../../public/images/man5.jpeg";
 import Image from "next/image";
 
 const FeaturedCard = ({
-  title,
-  price,
   img,
 }: {
   title: string;

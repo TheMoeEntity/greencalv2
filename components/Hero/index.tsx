@@ -36,9 +36,9 @@ const Hero = () => {
         <div>
           <Image
             src={icon}
-            objectFit="cover"
             alt="card-image"
-            layout="fill"
+            style={{ objectFit: 'cover' }}
+            fill
             quality={100}
             priority={true}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -47,9 +47,9 @@ const Hero = () => {
         <div>
           <Image
             src={icon}
-            objectFit="cover"
             alt="card-image"
-            layout="fill"
+            style={{ objectFit: 'cover' }}
+            fill
             quality={100}
             priority={true}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -58,9 +58,9 @@ const Hero = () => {
         <div>
           <Image
             src={icon}
-            objectFit="cover"
             alt="card-image"
-            layout="fill"
+            style={{ objectFit: 'cover' }}
+            fill
             quality={100}
             priority={true}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -72,9 +72,9 @@ const Hero = () => {
         <div>
           <Image
             src={icon}
-            objectFit="cover"
             alt="card-image"
-            layout="fill"
+            style={{ objectFit: 'cover' }}
+            fill
             quality={100}
             priority={true}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -83,9 +83,9 @@ const Hero = () => {
         <div>
           <Image
             src={icon}
-            objectFit="cover"
             alt="card-image"
-            layout="fill"
+            style={{ objectFit: 'cover' }}
+            fill
             quality={100}
             priority={true}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -94,9 +94,9 @@ const Hero = () => {
         <div>
           <Image
             src={icon}
-            objectFit="cover"
             alt="card-image"
-            layout="fill"
+            style={{ objectFit: 'cover' }}
+            fill
             quality={100}
             priority={true}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

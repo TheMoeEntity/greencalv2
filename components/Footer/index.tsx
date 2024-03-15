@@ -54,7 +54,7 @@ const Footer = () => {
               (+234) 807 548 9362, (+880) 155 69569 366</div>
           </div>
           <div>
-            <div style={{ width: '50px' }}>
+            <div style={{ width: '50px' }} className={styles.footerIcons}>
               <i className="fa-solid fa-envelope"></i>
             </div>
             <div>

@@ -6,7 +6,6 @@ import FeaturedCard from '../Cards/Featured'
 import Link from 'next/link'
 
 const FundRaisers = () => {
-    const router = useRouter()
     return (
         <div className={styles.funds}>
             <div className="container">
@@ -32,9 +31,6 @@ const FundRaisers = () => {
                     ))}
                 </ul>
             </div>
-
-
-
         </div>
     )
 }

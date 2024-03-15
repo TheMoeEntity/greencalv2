@@ -488,5 +488,5 @@ header.masthead .post-heading .meta a {
 
 .lg-react-element {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
 }

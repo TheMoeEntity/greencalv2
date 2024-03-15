@@ -13,6 +13,7 @@
     "bootstrap": "^5.3.3",
     "firebase": "^10.8.1",
     "framer-motion": "^11.0.8",
+    "handlebars": "^4.7.8",
     "imagesloaded": "^5.0.0",
     "lightgallery": "^2.7.2",
     "masonry-layout": "^4.2.2",

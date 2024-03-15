@@ -88,10 +88,9 @@ export type portfolioData = {
   slug: string;
 };
 export type replacements = {
-  name: string;
+  fullName: string;
   message: string;
-  phone: string;
-  service: string;
+  subject: string;
   email: string;
   greeting: string;
   sent: string

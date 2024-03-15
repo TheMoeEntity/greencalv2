@@ -1,5 +1,5 @@
 'use client'
-import React from "react";
+import React, { CSSProperties } from "react";
 import {
     MDBCarousel,
     MDBCarouselItem,
@@ -10,30 +10,43 @@ import {
 } from "mdb-react-ui-kit";
 
 export default function App() {
+    const buttonStyles: CSSProperties = {
+        background: '#0C4949',
+        color: 'white',
+        padding: '6px 10px',
+        border: 'none',
+        borderRadius: '4px',
+        marginTop: '5px'
+    }
     return (
         <MDBContainer className="my-5">
-            <MDBCarousel showControls dark>
+            <MDBCarousel dark>
 
                 <MDBCarouselItem className="active text-center">
                     <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+                        src="/images/avatar.jpeg"
                         alt="avatar"
                         className="rounded-circle shadow-1-strong mb-4"
                         style={{ width: "150px" }}
                     />
                     <MDBRow className="d-flex justify-content-center">
                         <MDBCol lg="8">
-                            <h5 className="mb-3"> FUNMILAYO ADEGOKE</h5>
-                            <p>Nutristionist, Abuja, Nigeria</p>
+                            <h5 className="mb-3"> KEPHA</h5>
+                            <p>Medical student, EBSU, Nigeria</p>
                             <p className="text-muted">
                                 <MDBIcon fas icon="quote-left" className="pe-2" />
                                 {`I've `}witnessed the impact of Greencal {`Foundation's`} food outreach programs. They not only provide nourishment but also promote a healthy community, ensuring no child goes to bed hungry.
+                                {" "}<MDBIcon fas icon="quote-right" className="pe-2" />
                             </p>
+                            <button style={{ ...buttonStyles }}>
+                                <i></i>
+                                Watch Video
+                            </button>
                         </MDBCol>
                     </MDBRow>
 
                 </MDBCarouselItem>
-
+                {/* 
                 <MDBCarouselItem className="text-center">
                     <img
                         src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp"
@@ -53,9 +66,9 @@ export default function App() {
                         </MDBCol>
                     </MDBRow>
 
-                </MDBCarouselItem>
+                </MDBCarouselItem> */}
 
-                <MDBCarouselItem className="text-center">
+                {/* <MDBCarouselItem className="text-center">
                     <img
                         src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
                         alt="avatar"
@@ -73,7 +86,7 @@ export default function App() {
                         </MDBCol>
                     </MDBRow>
 
-                </MDBCarouselItem>
+                </MDBCarouselItem> */}
             </MDBCarousel>
         </MDBContainer>
     );

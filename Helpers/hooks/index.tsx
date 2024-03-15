@@ -1,30 +1,82 @@
-import { notFound, usePathname, useRouter } from "next/navigation";
-import { ChangeEvent, useEffect, useRef, useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import { CSSProperties, ChangeEvent, useEffect, useRef, useState } from "react";
 import { Helpers } from "..";
 import { linkType } from "../types";
 
-export const useResize = () => {
-  const [val, setVal] = useState("");
-  const textAreaRef = useRef<HTMLTextAreaElement | null>(null);
-
-  const resizeTextArea = () => {
-    if (textAreaRef.current) {
-      textAreaRef.current.style.height = "auto";
-      textAreaRef.current.style.height =
-        textAreaRef.current.scrollHeight + "px";
-    }
+export const useCustomHero = (Link: any,
+  title: string,
+  styles: {
+    readonly [key: string]: string;
+  },
+  motion: any,
+  img: string
+) => {
+  const divStyle = {
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: "500px",
   };
-  const [selectedOption, setSelectedOption] = useState<string>("--Choose--");
-  const onOptionChangeHandler = (
-    event: ChangeEvent<HTMLSelectElement>
-  ): void => {
-    console.log("User Selected Value - ", event.target.value);
-    setSelectedOption(event.target.value);
-  };
+  const slideImage =
+  {
+    url: "/images/" + img,
+    caption: "Slide 1",
+  }
+  const customHero = (): JSX.Element => {
+    return (
+      <div className={styles.hero}>
+        <div>
+          <div
+            className={styles.sect}
+            style={{
+              ...divStyle,
+              backgroundImage: `url(${slideImage.url})`,
+            }}
+          >
+            <div className={styles.overlay}></div>
+            <span style={{
+              visibility: 'hidden'
+            }}>{slideImage.caption}</span>
+            {(
 
-  useEffect(resizeTextArea, [val]);
-  return { val, setVal, textAreaRef, selectedOption, onOptionChangeHandler };
-};
+              <motion.div
+                initial="hidden"
+                animate="visible"
+                variants={{
+                  hidden: {
+                    scale: 0,
+                    opacity: 0,
+                  },
+                  visible: {
+                    scale: 1,
+                    opacity: 1,
+                    transition: {
+                      delay: 0.8,
+                      duration: 0.8,
+                    },
+                  },
+                }}
+                style={{ float: "left", marginTop: '80px' }}
+                className={styles.caption}
+              >
+                <h1>
+                  {title}
+                </h1>
+                <p>
+                  Empowering lives through compassionate giving. Join Greencal Foundation in making a positive impact in Abakaliki, Ebonyi State, Nigeria.
+                </p>
+                {
+                  title !== "DONATIONS" && <Link href={'/donate'}><button>DONATE NOW</button></Link>
+                }
+
+              </motion.div>
+            )}
+          </div>
+        </div>
+      </div>
+    )
+  }
+  return { customHero }
+}
 export const useLinks = () => {
   const router = useRouter();
   const [links, setLinks] = useState<linkType[]>(Helpers.links);
@@ -95,47 +147,6 @@ export const useScrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return { scrollTop, scrollBtn, pathname };
-};
-export const useWhatsappLink = () => {
-  const whatsappLink = useRef<HTMLDivElement | null>(null);
-  const isBrowser = () => typeof window !== "undefined";
-  useEffect(() => {
-    window.addEventListener("scroll", animateIn);
-    return () => {
-      window.removeEventListener("scroll", animateIn);
-    };
-  }, []);
-  const animateIn = () => {
-    if (!isBrowser()) return;
-    // if (whatsappLink.current) {
-    //   if (
-    //     document.body.scrollTop > 160 ||
-    //     document.documentElement.scrollTop > 160
-    //   ) {
-    //     whatsappLink.current.style.bottom = "50px";
-    //     whatsappLink.current.style.opacity = "1";
-    //   } else {
-    //     whatsappLink.current.style.bottom = "-50px";
-    //     whatsappLink.current.style.opacity = "0";
-    //   }
-    // }
-  };
-  return { whatsappLink };
-};
-export const useFullWidth = (fullWidth: string) => {
-  const [anim, setAnim] = useState<string>("");
-  const timer = useRef<any | null>(null);
-  useEffect(() => {
-    timer.current = setTimeout(() => {
-      setAnim(fullWidth);
-    }, 2000);
-    return () => {
-      if (timer.current) {
-        clearTimeout(timer.current);
-      }
-    };
-  }, []);
-  return { anim, setAnim };
 };
 export const useStickyNav = (isStickyClass: string) => {
   const [sticky, setSticky] = useState("");

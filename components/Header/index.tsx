@@ -104,9 +104,9 @@ const Header = () => {
           <Link href={`/`}>
             <Image
               src={logo}
-              objectFit="cover"
               alt="card-image"
-              layout="fill"
+              style={{ objectFit: 'cover' }}
+              fill
               quality={100}
               priority={true}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -129,7 +129,7 @@ const Header = () => {
           {/* <div>
             <i className="fa-solid fa-magnifying-glass"></i>
           </div> */}
-          <div>
+          <div style={{ color: 'white' }}>
             <a
               target={`_blank`}
               rel="noopener noreferrer"
