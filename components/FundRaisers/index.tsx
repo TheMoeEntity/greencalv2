@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../../app/page.module.css'
 import { useRouter } from 'next/navigation'
 import FeaturedCard from '../Cards/Featured'
+import Link from 'next/link'
 
 const FundRaisers = () => {
     const router = useRouter()
@@ -11,7 +12,7 @@ const FundRaisers = () => {
             <div className="container">
                 <div className="row mb-3 justify-content-center">
                     <div className="col-md-8 text-center">
-                        <h2>Latest Fundraisers</h2>
+                        <h2>Latest Events</h2>
                         <p className="lead">Your Donations help determine the fate of children</p>
                     </div>
                 </div>
@@ -24,7 +25,9 @@ const FundRaisers = () => {
                             className="list-group-item mx-3 px-0 py-o border-0"
                             key={i}
                         >
-                            <FeaturedCard title={"Title of project"} img={'/images/img_1.jpeg'} price={0} />
+                            <Link href={'/events'}>
+                                <FeaturedCard title={"Title of project"} img={'/images/essay.jpg'} price={0} />
+                            </Link>
                         </li>
                     ))}
                 </ul>

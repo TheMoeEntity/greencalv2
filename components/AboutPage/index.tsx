@@ -92,13 +92,13 @@ const AboutPage = () => {
                         <div className="col-md-6">
 
                             <h3 className="h3">Our Mission</h3>
-                            <p>
+                            <>
                                 <ul>
                                     <li>Providing assistance to individuals and families struggling with medical bills.</li>
                                     <li>Supporting access to quality healthcare in underserved communities.</li>
                                     <li>Upholding the values of compassion, empathy, and generosity exemplified by Mrs. Juliana Calista Adum.</li>
                                 </ul>
-                            </p>
+                            </>
 
                             <h3 className="h3 mt-4">Empowering Our Community</h3>
                             <p>

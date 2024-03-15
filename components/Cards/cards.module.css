@@ -1,6 +1,7 @@
 .featured {
   width: 330px;
   height: auto;
+  cursor: pointer;
 }
 
 .featured .img {

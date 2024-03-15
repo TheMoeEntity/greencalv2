@@ -26,12 +26,13 @@ const FeaturedCard = ({
       <div className={styles.deets}>
         <div>
           <h5>
-            Water is life. Clean Water in Urban Africa.
+            Greencal Foundation Uplifts Students Through Annual Essay Competition.
           </h5>
         </div>
-        <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse sint nemo officiis. Eaque deleniti dignissimos sequi dolore inventore assumenda non.</p></div>
+        <div><p>For graduating secondary school students preparing for their SSCE or NECO exams, Greencal Foundation's essay competition provides a unique opportunity...</p></div>
         <div style={{ color: "gray" }}>
-          $23,000 raised
+          {/* $23,000 raised */}
+          View event
         </div>
       </div>
     </div>
