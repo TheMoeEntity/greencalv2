@@ -21,11 +21,6 @@ export class Helpers {
       href: "events",
     },
     {
-      name: "Donate",
-      isActive: false,
-      href: "donate",
-    },
-    {
       name: "Gallery",
       isActive: false,
       href: "gallery",

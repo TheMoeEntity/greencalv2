@@ -87,11 +87,14 @@ export type portfolioData = {
   details: string[];
   slug: string;
 };
-export type replacements = {
+export interface replacements {
   fullName: string;
-  message: string;
-  subject: string;
+  message?: string;
+  subject?: string;
   email: string;
   greeting: string;
   sent: string
 };
+export interface donationReplacements extends replacements {
+  amount: number
+}

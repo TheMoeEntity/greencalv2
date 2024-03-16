@@ -6,14 +6,14 @@ import Link from "next/link";
 import { useCustomHero } from "@/Helpers/hooks";
 
 const AboutPage = () => {
-    const { customHero } = useCustomHero(Link, "ABOUT US", styles, motion, "outreach2.jpg")
+    const { customHero } = useCustomHero(Link, "ABOUT US", styles, motion, "banner.jpg")
     return (
         <div>
             {customHero()}
             <div className="site-section mb-5 px-2">
                 <div className="container">
                     <div className="row mb-5">
-                        <div className="col-md-12 mb-5"><h1>About Greencal Foundation</h1></div>
+                        <div className="col-md-12 mb-5"><h3>About Greencal Foundation</h3></div>
                         <div className="col-md-6">
                             <p className="lead mb-4">Greencal Foundation is a non-profit organization based in Abakaliki, Ebonyi State, Nigeria. We are dedicated to improving the lives of those facing illness, hardship, and limited opportunities.</p> <br />
                             <h3 className="h3">A Story of Inspiration</h3>

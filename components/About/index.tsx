@@ -29,18 +29,18 @@ const About = () => {
             <i className="fa-solid fa-book"></i>
           </div>
           <div>
-            <strong>Education & Food</strong>
+            <strong>Education </strong>
           </div>
           <div>
             <p>
-              Empowering young minds with knowledge and nourishment for a brighter future.
+              Unlocking potential and building brighter futures through educational outreach programs.
             </p>
           </div>
         </div>
 
         <div>
           <div style={{ width: "60px", height: "60px", fontSize: '40px' }}>
-            <i className="fa-solid fa-hand"></i>
+            <i className="fas fa-hands-helping"></i>
           </div>
           <div>
             <strong>Outreach</strong>

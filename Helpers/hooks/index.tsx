@@ -14,7 +14,7 @@ export const useCustomHero = (Link: any,
   const divStyle = {
     backgroundSize: "cover",
     backgroundPosition: "center",
-    height: "500px",
+    height: "550px",
   };
   const slideImage =
   {
@@ -58,11 +58,10 @@ export const useCustomHero = (Link: any,
                 style={{ float: "left", marginTop: '80px' }}
                 className={styles.caption}
               >
-                <h1>
-                  {title}
-                </h1>
+                <h3>Greencal Foundation</h3>
+                <h1> {title}</h1>
                 <p>
-                  Empowering lives through compassionate giving. Join Greencal Foundation in making a positive impact in Abakaliki, Ebonyi State, Nigeria.
+                  We are dedicated to improving the lives of those facing illness, hardship, and limited opportunities.
                 </p>
                 {
                   title !== "DONATIONS" && <Link href={'/donate'}><button>DONATE NOW</button></Link>

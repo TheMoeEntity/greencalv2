@@ -26,8 +26,8 @@
 
 .caption {
     margin-left: 70px;
-    width: 40%;
-    margin-top: 150px;
+    width: 50%;
+    margin-top: 60px;
     position: relative;
 }
 
@@ -35,7 +35,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.89);
 }
 
 .caption:nth-child(2) {
@@ -45,20 +45,25 @@
 .caption h1 {
     font-size: 45px;
     line-height: 1.2;
-    font-weight: 550;
+    font-weight: 500;
     color: white;
 }
 
+.caption h3 {
+    color: #A2CA62;
+    margin-bottom: 30px;
+}
+
 .caption p {
-    /* font-weight: 100; */
-    margin-top: 40px;
+    width: 65%;
+    margin-top: 20px;
 }
 
 .caption button {
     border: none;
     background-color: #0C4949;
     color: white;
-    padding: 20px 20px;
+    padding: 14px 15px;
     margin-top: 40px;
     font-weight: bold;
 }

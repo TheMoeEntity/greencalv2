@@ -22,87 +22,16 @@ const Hero = () => {
   };
   const slideImages = [
     {
-      url: "/images/outreach2.jpg",
+      url: "/images/banner3.jpg",
       caption: "Slide 1",
     },
     {
-      url: "/images/outreach4.jpg",
+      url: "/images/outreach6.jpg",
       caption: "Slide 2",
     },
   ];
   return (
     <div className={styles.hero}>
-      <div className={styles.blob}>
-        <div>
-          <Image
-            src={icon}
-            alt="card-image"
-            style={{ objectFit: 'cover' }}
-            fill
-            quality={100}
-            priority={true}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
-        </div>
-        <div>
-          <Image
-            src={icon}
-            alt="card-image"
-            style={{ objectFit: 'cover' }}
-            fill
-            quality={100}
-            priority={true}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
-        </div>
-        <div>
-          <Image
-            src={icon}
-            alt="card-image"
-            style={{ objectFit: 'cover' }}
-            fill
-            quality={100}
-            priority={true}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
-        </div>
-      </div>
-
-      <div style={{ bottom: "40%", right: "50%" }} className={styles.blob}>
-        <div>
-          <Image
-            src={icon}
-            alt="card-image"
-            style={{ objectFit: 'cover' }}
-            fill
-            quality={100}
-            priority={true}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
-        </div>
-        <div>
-          <Image
-            src={icon}
-            alt="card-image"
-            style={{ objectFit: 'cover' }}
-            fill
-            quality={100}
-            priority={true}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
-        </div>
-        <div>
-          <Image
-            src={icon}
-            alt="card-image"
-            style={{ objectFit: 'cover' }}
-            fill
-            quality={100}
-            priority={true}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
-        </div>
-      </div>
       <div className="slide-container">
         <Slide
           arrows={false}
@@ -148,11 +77,10 @@ const Hero = () => {
                     style={{ float: "left" }}
                     className={styles.caption}
                   >
-                    <h1>
-                      Help for Everyone!
-                    </h1>
+                    <h3>Cultivating Young Minds</h3>
+                    <h1>Sparking a Passion for Learning.</h1>
                     <p>
-                      Empowering lives through compassionate giving. Join Greencal Foundation in making a positive impact in Abakaliki, Ebonyi State, Nigeria.
+                      Greencal Foundation ignites intellectual curiosity through scholarships.
                     </p>
 
                     <Link href={'/donate'}><button>DONATE NOW</button></Link>
@@ -186,11 +114,10 @@ const Hero = () => {
                       },
                     }}
                     className={styles.caption}>
-                    <h1>
-                      Charity is Priority.
-                    </h1>
+                    <h3>Investing in Tomorrow's Leaders</h3>
+                    <h1>Educating and Empowering Abakaliki's Youth</h1>
                     <p>
-                      Empowering lives through compassionate giving. Join Greencal Foundation in making a positive impact in Abakaliki, Ebonyi State, Nigeria.
+                      Greencal Foundation fosters academic excellence and brighter futures.
                     </p>
 
                     <Link href={'/donate'}><button>DONATE NOW</button></Link>

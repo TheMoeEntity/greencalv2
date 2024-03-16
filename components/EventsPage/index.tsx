@@ -13,7 +13,7 @@ const EventsPage = () => {
     };
     const slideImages = [
         {
-            url: "/images/essay.jpg",
+            url: "/images/banner2.jpg",
             caption: "Slide 1",
         },
     ];
@@ -22,58 +22,49 @@ const EventsPage = () => {
     return (
         <div>
             <div className={styles.hero}>
-                <div className="slide-container">
-                    <Slide
-                        arrows={false}
-                        infinite={true}
-                        duration={7000}
-                        transitionDuration={400}
-                    >
-                        {slideImages.map((slideImage, index) => (
-                            <div key={index}>
-                                <div
-                                    className={styles.sect}
-                                    style={{
-                                        ...divStyle,
-                                        backgroundImage: `url(${slideImage.url})`,
-                                    }}
-                                >
-                                    <div className={styles.overlay}></div>
-                                    <span style={{
-                                        visibility: 'hidden'
-                                    }}>{slideImage.caption}</span>
-                                    {(
+                {slideImages.map((slideImage, index) => (
+                    <div key={index}>
+                        <div
+                            className={styles.sect}
+                            style={{
+                                ...divStyle,
+                                backgroundImage: `url(${slideImage.url})`,
+                            }}
+                        >
+                            <div className={styles.overlay}></div>
+                            <span style={{
+                                visibility: 'hidden'
+                            }}>{slideImage.caption}</span>
+                            {(
 
-                                        <motion.div
-                                            initial="hidden"
-                                            animate="visible"
-                                            variants={{
-                                                hidden: {
-                                                    scale: 0,
-                                                    opacity: 0,
-                                                },
-                                                visible: {
-                                                    scale: 1,
-                                                    opacity: 1,
-                                                    transition: {
-                                                        delay: 0.8,
-                                                        duration: 0.8,
-                                                    },
-                                                },
-                                            }}
-                                            style={{ float: "left", marginTop: '170px' }}
-                                            className={styles.caption}
-                                        >
-                                            <h1>
-                                                Greencal Foundation Uplifts Students Through Annual Essay Competition
-                                            </h1>
-                                        </motion.div>
-                                    )}
-                                </div>
-                            </div>
-                        ))}
-                    </Slide>
-                </div>
+                                <motion.div
+                                    initial="hidden"
+                                    animate="visible"
+                                    variants={{
+                                        hidden: {
+                                            scale: 0,
+                                            opacity: 0,
+                                        },
+                                        visible: {
+                                            scale: 1,
+                                            opacity: 1,
+                                            transition: {
+                                                delay: 0.8,
+                                                duration: 0.8,
+                                            },
+                                        },
+                                    }}
+                                    style={{ float: "left", marginTop: '90px' }}
+                                    className={styles.caption}
+                                >
+                                    <h1 style={{ lineHeight: '1.7' }}>
+                                        Greencal Foundation Uplifts Students Through Annual Essay Competition
+                                    </h1>
+                                </motion.div>
+                            )}
+                        </div>
+                    </div>
+                ))}
                 <article className="mb-4 py-3">
                     <div className="container px-4 px-lg-5">
                         <div className="row gx-4 gx-lg-5 justify-content-center">
