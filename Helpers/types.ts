@@ -98,3 +98,9 @@ export interface replacements {
 export interface donationReplacements extends replacements {
   amount: number
 }
+export type eventCard = {
+  img: StaticImageData,
+  title: string
+  content: string
+  comingSoon: boolean
+}

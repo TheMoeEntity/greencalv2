@@ -83,7 +83,7 @@ const Hero = () => {
                       Greencal Foundation ignites intellectual curiosity through scholarships.
                     </p>
 
-                    <Link href={'/donate'}><button>DONATE NOW</button></Link>
+                    <Link href={'/'}><button>DONATE NOW</button></Link>
                   </motion.div>
 
                 ) : (
@@ -120,7 +120,7 @@ const Hero = () => {
                       Greencal Foundation fosters academic excellence and brighter futures.
                     </p>
 
-                    <Link href={'/donate'}><button>DONATE NOW</button></Link>
+
                   </motion.div>
                 )}
               </div>

@@ -20,6 +20,7 @@ const About = () => {
     // }
   }, [inView]);
   const { push } = useRouter()
+
   return (
     <div className={styles.about}>
       <div ref={ref} className={styles.test}></div>
@@ -47,7 +48,7 @@ const About = () => {
           </div>
           <div>
             <p>
-              Extending a helping hand to communities through impactful outreach initiatives.
+              Extending a helping hand to our local communities through impactful outreach initiatives.
             </p>
           </div>
         </div>

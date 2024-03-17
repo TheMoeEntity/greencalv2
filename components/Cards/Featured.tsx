@@ -1,12 +1,15 @@
+import { title } from "process";
 import styles from "./cards.module.css";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 const FeaturedCard = ({
-  img,
+  img, title, comingSoon, content
 }: {
   title: string;
-  price: number;
-  img: string;
+  comingSoon: boolean;
+  img: StaticImageData;
+  content: string
 }) => {
   return (
     <div className={styles.featured}>
@@ -23,13 +26,19 @@ const FeaturedCard = ({
       <div className={styles.deets}>
         <div>
           <h5>
-            Greencal Foundation Uplifts Students Through Annual Essay Competition.
+            {title}
           </h5>
         </div>
-        <div><p>For graduating secondary school students preparing for their SSCE or NECO exams, Greencal {`Foundation's`} essay competition provides a unique opportunity...</p></div>
+        <div><p>{content}</p></div>
         <div style={{ color: "gray" }}>
           {/* $23,000 raised */}
-          View event
+          <button disabled={comingSoon}>
+            <Link href={'/events'}>
+              {
+                comingSoon ? 'Coming soon..' : "View event"
+              }
+            </Link>
+          </button>
         </div>
       </div>
     </div>

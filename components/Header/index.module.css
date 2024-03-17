@@ -210,7 +210,7 @@
 .headerOne {
     width: 100%;
     height: 55px;
-    background-color: black;
+    background-color: #151C1F;
     display: flex;
     align-items: center;
     flex-flow: row wrap;
@@ -232,7 +232,7 @@
 
 .headerOne>div i {
     margin-right: 10px;
-    color: #0C4949;
+    color: #fff;
 }
 
 .headerOne>div:nth-child(2) i {

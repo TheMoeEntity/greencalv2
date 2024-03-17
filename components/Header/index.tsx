@@ -86,8 +86,7 @@ const Header = () => {
 
         <div>
           <div>
-            <i style={{ color: "#0C4949" }} className="fa fa-clock"></i> Hours:
-            Mon-Fri: 8.00 am - 5.00 pm &nbsp;&nbsp;&nbsp;&nbsp;|
+
             <i className="fa-brands fa-twitter"></i>
             <i className="fa-brands fa-instagram"></i>
             <i className="fa-brands fa-facebook"></i>
