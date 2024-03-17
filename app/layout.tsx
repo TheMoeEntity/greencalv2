@@ -10,9 +10,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Greencal Foundation - Empowering Lives for a Brighter Future",
   description:
-    "Empowering lives through education, food outreach, and scholarships. Join Greencal Foundation in creating positive change in Abakaliki, Ebonyi State, Nigeria.",
+    "Greencal Foundation provides hope and support through medical assistance, education, and community outreach.",
   keywords:
-    "Greencal Foundation, charity, education, outreach, scholarships, Abakaliki, Ebonyi State, Nigeria",
+    "Greencal Foundation, Adum Obinna,  Mrs. Juliana Calista Adum, charity, education, outreach, scholarships, Abakaliki, Ebonyi State, Nigeria",
   authors: [{ name: "Moses Chukwudi Nwigberi" }],
   creator: "Moses Chukwudi Nwigberi",
   applicationName: "Greencal Foundation",

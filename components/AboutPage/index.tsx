@@ -14,7 +14,7 @@ const AboutPage = () => {
         {
             name: "Adum Obinna",
             position: "Founder",
-            info: 'Adum Obinna, a passionate philanthropist, economics student and owner of Brill Exchange, in Ebonyi State, established Greencal Foundation in memory of his inspiring mother. Witnessing her dedication to helping others ignited a fire in him to continue her legacy of giving back to the community.'
+            info: 'Adum Obinna, a passionate philanthropist, Economics student and owner of BrillX, in Ebonyi State, established Greencal Foundation in memory of his inspiring mother. Witnessing her dedication to helping others ignited a fire in him to continue her legacy of giving back to the community.'
         },
         {
             name: "Kepha",
@@ -98,7 +98,7 @@ const AboutPage = () => {
 
                     <div className="row mt-5">
                         <div className="col-md-12 mb-5 text-center mt-5">
-                            <h2>Leadership</h2>
+                            <h2 className="title-color">Leadership</h2>
                         </div>
                         <Row xs={1} md={2} lg={2} className="g-4">
                             {leaders.map((leader) => (
