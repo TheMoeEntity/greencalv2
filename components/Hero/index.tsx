@@ -114,8 +114,8 @@ const Hero = () => {
                       },
                     }}
                     className={styles.caption}>
-                    <h3>Investing in Tomorrow's Leaders</h3>
-                    <h1>Educating and Empowering Abakaliki's Youth</h1>
+                    <h3>Investing in {`Tomorrow's`} Leaders</h3>
+                    <h1>Educating and Empowering {`Abakaliki's`} Youth</h1>
                     <p>
                       Greencal Foundation fosters academic excellence and brighter futures.
                     </p>
