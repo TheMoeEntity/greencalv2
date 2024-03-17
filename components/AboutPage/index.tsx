@@ -66,6 +66,19 @@ const AboutPage = () => {
                                 <div className="col-lg-8">
                                     <p>At Greencal Foundation, {`we're`} passionate about transforming lives in Abakaliki, Ebonyi State. With a focus on education, medical outreach, and scholarships, we strive to create a brighter future for children, fostering a community of empowerment and growth. We believe that by investing in education and basic needs, we can equip the next generation to overcome challenges and reach their full potential.</p>
                                     <h3 className="mt-4 title-color">Our Mission</h3>
+                                    <p>
+                                        Our mission is to empower the less privileged and underserved communities
+                                        through targeted initiatives and relief programs. We are committed to breaking
+                                        the cycle of poverty by providing scholarships and grants to students who
+                                        face financial barriers to completing their education
+                                    </p>
+                                    <p>
+                                        In addition, we
+                                        strive to bring essential support to those in rural areas, ensuring that
+                                        no one is left behind.
+                                        Through compassion, action, and community
+                                        collaboration, we aim to create a foundation of hope and opportunity for all individuals we serve.
+                                    </p>
                                     <ul>
                                         <li>Providing assistance to individuals and families struggling with medical bills.</li>
                                         <li>Supporting access to quality healthcare in underserved communities.</li>
@@ -75,9 +88,9 @@ const AboutPage = () => {
                                     </ul>
                                     <h3 className="mt-5 title-color">Our Vision</h3>
                                     <p>
-                                        Greencal Foundation envisions a future where education is accessible and empowering for all children in Abakaliki, Ebonyi State. We strive to create a community where financial limitations do not hinder a {`student's`} pursuit of knowledge and potential.
+                                        Our vision is a world where poverty and educational inequality are eradicated, and every individual has the resources and opportunities needed to thrive. We dream of communities where support reaches the farthest corners, empowering the poor and needy to rise above their circumstances.
                                     </p>
-                                    <p>Through our scholarship and essay competition programs, we aspire to see a generation of well-educated young minds who are equipped to contribute meaningfully to their communities and shape a brighter future for Abakaliki.</p>
+                                    <p>With a focus on sustainable development and empowerment, we envision a future where everyone, regardless of their background, has access to education, healthcare, and the essential means to lead fulfilling lives. We believe in a world transformed through generosity, where every act of kindness makes a difference.</p>
                                 </div>
                             </div>
                         </div>
