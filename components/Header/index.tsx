@@ -125,11 +125,12 @@ const Header = () => {
           {/* <div>
             <i className="fa-solid fa-magnifying-glass"></i>
           </div> */}
-          <div style={{ color: 'white' }}>
+          <div>
             <a
               target={`_blank`}
               rel="noopener noreferrer"
               href="https://wa.me/+2348116177509"
+              style={{ color: 'white !important' }}
             >
               {`LETS`} TALK
             </a>

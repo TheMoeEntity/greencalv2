@@ -12,7 +12,7 @@ const ContactPage = () => {
     const [status, setStatus] = useState('SEND MESSAGE')
     const [val, setVal] = useState('')
     const { enqueueSnackbar } = useSnackbar();
-    const { customHero } = useCustomHero(Link, "CONTACT US", styles, motion, "outreach2.jpg")
+    const { customHero } = useCustomHero(Link, "CONTACT US", styles, motion, "outreach6.jpg")
     return (
         <div>
             {customHero()}

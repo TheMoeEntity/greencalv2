@@ -233,6 +233,10 @@
     .dons {
         min-height: 1500px;
     }
+
+    .caption p {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:375px) {
