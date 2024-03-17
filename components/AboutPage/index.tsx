@@ -35,7 +35,7 @@ const AboutPage = () => {
                                     <p>
                                         Greencal Foundation was born out of a deeply personal experience. Our founder, Obinna Adum, was deeply affected by the passing of his mother, Mrs. Juliana Calista Adum. A renowned philanthropist herself, Mrs. Adum dedicated her life to helping others in need. When she fell ill, Obinna was inspired to create a lasting legacy in her honor.
                                     </p>
-                                    <p>Greencal Foundation serves as a way to continue Mrs. Adum's incredible work and provide the support Obinna would have wanted for her.</p>
+                                    <p>Greencal Foundation serves as a way to continue Mrs. {`Adum's `}incredible work and provide the support Obinna would have wanted for her.</p>
 
                                 </div>
                             </div>
@@ -49,7 +49,7 @@ const AboutPage = () => {
                                     <h2 className="title-color">Empowering A Community</h2>
                                 </div>
                                 <div className="col-lg-8">
-                                    <p>At Greencal Foundation, we're passionate about transforming lives in Abakaliki, Ebonyi State. With a focus on education, medical outreach, and scholarships, we strive to create a brighter future for children, fostering a community of empowerment and growth. We believe that by investing in education and basic needs, we can equip the next generation to overcome challenges and reach their full potential.</p>
+                                    <p>At Greencal Foundation, {`we're`} passionate about transforming lives in Abakaliki, Ebonyi State. With a focus on education, medical outreach, and scholarships, we strive to create a brighter future for children, fostering a community of empowerment and growth. We believe that by investing in education and basic needs, we can equip the next generation to overcome challenges and reach their full potential.</p>
                                     <h3 className="mt-4 title-color">Our Mission</h3>
                                     <ul>
                                         <li>Providing assistance to individuals and families struggling with medical bills.</li>
@@ -58,7 +58,7 @@ const AboutPage = () => {
                                     </ul>
                                     <h3 className="mt-5 title-color">Our Vision</h3>
                                     <p>
-                                        Greencal Foundation envisions a future where education is accessible and empowering for all children in Abakaliki, Ebonyi State. We strive to create a community where financial limitations do not hinder a student's pursuit of knowledge and potential.
+                                        Greencal Foundation envisions a future where education is accessible and empowering for all children in Abakaliki, Ebonyi State. We strive to create a community where financial limitations do not hinder a {`student's`} pursuit of knowledge and potential.
                                     </p>
                                     <p>Through our scholarship and essay competition programs, we aspire to see a generation of well-educated young minds who are equipped to contribute meaningfully to their communities and shape a brighter future for Abakaliki.</p>
                                 </div>
