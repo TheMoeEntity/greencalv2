@@ -124,12 +124,14 @@
 .main>div:nth-child(1) {
   height: 500px;
   transition: 0.88s;
-  transform: translateX(-100vw);
+  transform: translateY(-300px);
+  opacity: 0;
 }
 
 .main>div:nth-child(2) {
   transition: 0.88s;
-  transform: translateX(100vw);
+  transform: translateY(-300px);
+  opacity: 0;
 }
 
 .main>div:nth-child(1).animClass {
@@ -148,21 +150,25 @@
 
 @keyframes animateIn {
   0% {
-    transform: translateX(-100vw);
+    transform: translateY(-300px);
+    opacity: 0;
   }
 
   100% {
     transform: none;
+    opacity: 1;
   }
 }
 
 @keyframes animateIn2 {
   0% {
-    transform: translateX(100vw);
+    transform: translateY(300px);
+    opacity: 0;
   }
 
   100% {
     transform: none;
+    opacity: 1;
   }
 }
 

@@ -23,7 +23,6 @@ const About = () => {
 
   return (
     <div className={styles.about}>
-      <div ref={ref} className={styles.test}></div>
       <div className={styles.cards}>
         <div>
           <div style={{ width: "60px", height: "60px", fontSize: '40px' }}>
@@ -100,6 +99,7 @@ const About = () => {
               />
             </div>
           </div>
+          <div ref={ref} className={styles.test}></div>
           <h4>&nbsp; &nbsp; &nbsp;WHO WE ARE??</h4>
           <h2>Empowering Lives, Building Futures: Our Commitment to Positive Change.</h2>
           <p>
