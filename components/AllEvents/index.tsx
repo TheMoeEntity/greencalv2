@@ -31,7 +31,7 @@ const AllEvents = () => {
             {customHero()}
             <section className="events px-2 py-5">
                 <h1 className="title-color text-center">Upcoming and Past Events</h1>
-                <p className="text-center">Greencal Foundation is dedicated to empowering our community through various initiatives. <br /> Here's a glimpse into some of our recent events.</p>
+                <p className="text-center">Greencal Foundation is dedicated to empowering our community through various initiatives. <br /> {`Here's `}a glimpse into some of our recent events.</p>
                 <div className={styles2.grid}>
                     <ul className="px-1 py-0 list-group list-group-horizontal position-relative overflow-scroll d-flex w-100 mb-5">
                         {events.map((x, i) => (

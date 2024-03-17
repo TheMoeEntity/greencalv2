@@ -12,7 +12,8 @@ const FundRaisers = () => {
             img: essay,
             title: "Greencal Foundation Uplifts Students Through Annual Essay Competition",
             content: "For graduating secondary school students preparing for their SSCE or NECO exams, Greencal Foundation's essay competition provides a unique opportunity...",
-            comingSoon: false
+            comingSoon: false,
+            slug: 'greencal-essay-competition'
         },
         {
             img: medical,
@@ -39,7 +40,7 @@ const FundRaisers = () => {
                             className="list-group-item mx-3 px-0 py-o border-0"
                             key={i}
                         >
-                            <FeaturedCard title={x.title} comingSoon={x.comingSoon} img={x.img} content={x.content} />
+                            <FeaturedCard title={x.title} comingSoon={x.comingSoon} img={x.img} slug={x.slug} content={x.content} />
                         </li>
                     ))}
                 </ul>

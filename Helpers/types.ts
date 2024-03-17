@@ -103,4 +103,5 @@ export type eventCard = {
   title: string
   content: string
   comingSoon: boolean
+  slug?: string
 }
