@@ -24,8 +24,8 @@ const Footer = () => {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
-          <p>
-            Giving help To Those Who Need It. Charity works make the world a better place.
+          <p> Greencal Foundation: Where Compassion Meets Need
+
           </p>
           <strong>Opening Hours :</strong> Monday Sat: 8am to 5pm
 

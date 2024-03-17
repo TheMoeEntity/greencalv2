@@ -5,8 +5,23 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { useCustomHero } from "@/Helpers/hooks";
 import '../EventsPage/style.css'
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+
 
 const AboutPage = () => {
+    const leaders = [
+        {
+            name: "Adum Obinna",
+            position: "Founder",
+            info: 'Adum Obinna, a passionate philanthropist, economics student and owner of Brill Exchange, in Ebonyi State, established Greencal Foundation in memory of his inspiring mother. Witnessing her dedication to helping others ignited a fire in him to continue her legacy of giving back to the community.'
+        },
+        {
+            name: "Kepha",
+            position: "Co-founder",
+            info: 'Kepha, a dedicated medical student, brings his medical expertise and unwavering commitment to social justice to Greencal Foundation. Witnessing the struggles faced by many in Abakaliki firsthand fuels his drive to improve access to quality healthcare in underserved communities.'
+        }
+    ]
     const { customHero } = useCustomHero(Link, "ABOUT US", styles, motion, "banner.jpg")
     return (
         <div>
@@ -54,6 +69,8 @@ const AboutPage = () => {
                                     <ul>
                                         <li>Providing assistance to individuals and families struggling with medical bills.</li>
                                         <li>Supporting access to quality healthcare in underserved communities.</li>
+                                        <li>Offering scholarships and educational support programs to empower students of all ages</li>
+                                        <li>Partnering with churches and faith-based organizations to address community needs.</li>
                                         <li>Upholding the values of compassion, empathy, and generosity exemplified by Mrs. Juliana Calista Adum.</li>
                                     </ul>
                                     <h3 className="mt-5 title-color">Our Vision</h3>
@@ -70,62 +87,20 @@ const AboutPage = () => {
                         <div className="col-md-12 mb-5 text-center mt-5">
                             <h2>Leadership</h2>
                         </div>
-                        <div className="col-md-4 col-lg-3">
-                            <div className="block-38 text-center">
-                                <div className="block-38-img">
-                                    <div className="block-38-header">
-
-                                        <h3 className="block-38-heading">Adum Obinna</h3>
-                                        <p className="block-38-subheading">CEO</p>
+                        <Row xs={1} md={2} lg={2} className="g-4">
+                            {leaders.map((leader) => (
+                                <Col key={leader.name}>
+                                    <div className="leader-card text-center">
+                                        {/* <img src={leader.imageUrl} alt={leader.name} className="leader-img" /> */}
+                                        <div className="leader-info">
+                                            <h3>{leader.name}</h3>
+                                            <p style={{ color: 'gray' }}>{leader.position}</p>
+                                            <p>{leader.info}</p>
+                                        </div>
                                     </div>
-                                    <div className="block-38-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit distinctio recusandae doloribus ut fugit officia voluptate soluta. </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-3">
-                            <div className="block-38 text-center">
-                                <div className="block-38-img">
-                                    <div className="block-38-header">
-                                        {/* <img src="images/person_2.jpg" alt="Image placeholder" /> */}
-                                        <h3 className="block-38-heading">Jennifer Greive</h3>
-                                        <p className="block-38-subheading">President</p>
-                                    </div>
-                                    <div className="block-38-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit distinctio recusandae doloribus ut fugit officia voluptate soluta. </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-3">
-                            <div className="block-38 text-center">
-                                <div className="block-38-img">
-                                    <div className="block-38-header">
-                                        {/* <img src="images/person_3.jpg" alt="Image placeholder" /> */}
-                                        <h3 className="block-38-heading">Patrick Marx</h3>
-                                        <p className="block-38-subheading">Marketer</p>
-                                    </div>
-                                    <div className="block-38-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit distinctio recusandae doloribus ut fugit officia voluptate soluta. </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-3">
-                            <div className="block-38 text-center">
-                                <div className="block-38-img">
-                                    <div className="block-38-header">
-                                        {/* <img src="images/person_4.jpg" alt="Image placeholder" /> */}
-                                        <h3 className="block-38-heading">Mike Coolbert</h3>
-                                        <p className="block-38-subheading">Partner</p>
-                                    </div>
-                                    <div className="block-38-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit distinctio recusandae doloribus ut fugit officia voluptate soluta. </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                </Col>
+                            ))}
+                        </Row>
                     </div>
 
                 </div>

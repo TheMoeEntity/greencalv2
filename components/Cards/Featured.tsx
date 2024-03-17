@@ -4,12 +4,13 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
 const FeaturedCard = ({
-  img, title, comingSoon, content
+  img, title, comingSoon, content, slug
 }: {
   title: string;
   comingSoon: boolean;
   img: StaticImageData;
-  content: string
+  content: string,
+  slug?: string
 }) => {
   return (
     <div className={styles.featured}>
@@ -33,7 +34,7 @@ const FeaturedCard = ({
         <div style={{ color: "gray" }}>
           {/* $23,000 raised */}
           <button disabled={comingSoon}>
-            <Link href={'/events'}>
+            <Link href={'/events/' + slug ?? 'events'}>
               {
                 comingSoon ? 'Coming soon..' : "View event"
               }

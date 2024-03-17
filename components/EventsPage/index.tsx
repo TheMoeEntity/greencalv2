@@ -11,8 +11,8 @@ const EventsPage = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <div className="block text-center">
-                                <span className="text-white">Event details</span>
-                                <h1 className="text-capitalize mb-5 text-lg">Events</h1>
+                                <span className="text-white invisible">Event details</span>
+                                <h1 className="text-capitalize mb-5 text-lg invisible">Events</h1>
                             </div>
                         </div>
                     </div>

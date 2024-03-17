@@ -27,14 +27,14 @@ const About = () => {
       <div className={styles.cards}>
         <div>
           <div style={{ width: "60px", height: "60px", fontSize: '40px' }}>
-            <i className="fa-solid fa-book"></i>
+            <i className="fa-solid fa-hands-helping"></i>
           </div>
           <div>
-            <strong>Education </strong>
+            <strong>Empowering Communities </strong>
           </div>
           <div>
             <p>
-              Unlocking potential and building brighter futures through educational outreach programs.
+              Providing a helping hand in various areas including education, medical assistance and community support.
             </p>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import dynamic from "next/dynamic";
-const EventsPage = dynamic(() => import("../../components/EventsPage"));
+const EventsPage = dynamic(() => import("../../components/AllEvents"));
 
 const Events = () => {
     return (

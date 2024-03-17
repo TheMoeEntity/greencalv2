@@ -77,10 +77,10 @@ const Hero = () => {
                     style={{ float: "left" }}
                     className={styles.caption}
                   >
-                    <h3>Cultivating Young Minds</h3>
-                    <h1>Sparking a Passion for Learning.</h1>
+                    <h3>Building a Stronger Commmunity</h3>
+                    <h1>Together, We Empower Our Community</h1>
                     <p>
-                      Greencal Foundation ignites intellectual curiosity through scholarships.
+                      Greencal Foundation provides hope and support through medical assistance, education, and community outreach.
                     </p>
 
                     <Link href={'/'}><button>DONATE NOW</button></Link>
@@ -114,10 +114,10 @@ const Hero = () => {
                       },
                     }}
                     className={styles.caption}>
-                    <h3>Investing in {`Tomorrow's`} Leaders</h3>
-                    <h1>Educating and Empowering {`Abakaliki's`} Youth</h1>
+                    <h3>Helping Hands, Brighter Futures</h3>
+                    <h1>Greencal Foundation: Where Compassion Meets Need</h1>
                     <p>
-                      Greencal Foundation fosters academic excellence and brighter futures.
+                      Supporting healthcare, education, and faith-based initiatives in Abakaliki, Ebonyi State
                     </p>
 
 
