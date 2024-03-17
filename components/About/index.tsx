@@ -40,7 +40,7 @@ const About = () => {
 
         <div>
           <div style={{ width: "60px", height: "60px", fontSize: '40px' }}>
-            <i className="fas fa-hands-helping"></i>
+            <i className="fa-solid fa-seedling"></i>
           </div>
           <div>
             <strong>Outreach</strong>

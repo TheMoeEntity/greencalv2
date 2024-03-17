@@ -40,22 +40,22 @@ const Footer = () => {
           <h2 style={{ marginLeft: '30px' }}>CONTACT INFO</h2>
           <div>
             <div>
-              <i className="fas fa-map-marker"></i>
+              <i style={{ fontSize: '20px' }} className="fas fa-map-marker"></i>
             </div>
             <div>Opinion Nigeria LTD prince and princess ishieke Abakaliki</div>
           </div>
 
           <div>
             <div>
-              <i className="fa-solid fa-phone"></i>
+              <i style={{ fontSize: '20px' }} className="fa-solid fa-phone"></i>
 
             </div>
             <div>
-              (+234) 807 548 9362, (+880) 155 69569 366</div>
+              (+234) 811 617 7509 </div>
           </div>
           <div>
             <div style={{ width: '50px' }} className={styles.footerIcons}>
-              <i className="fa-solid fa-envelope"></i>
+              <i style={{ fontSize: '20px' }} className="fa-solid fa-envelope"></i>
             </div>
             <div>
               greencalfoundation@gmail.com</div>
@@ -91,16 +91,7 @@ const Footer = () => {
       </div>
 
       <div className={styles.copyright}>
-        <div>© 2024 Greencal Foundation.</div>
-        <div>
-          <ul>
-            <li>Home <i className="fas fa-circle"></i></li>
-            <li>About <i className="fas fa-circle"></i></li>
-            <li>Donate <i className="fas fa-circle"></i></li>
-            <li>Gallery <i className="fas fa-circle"></i></li>
-            <li>Contact <i className="fas fa-circle"></i></li>
-          </ul>
-        </div>
+        <div>© {new Date().getFullYear()} Greencal Foundation.</div>
       </div>
     </div>
   );
