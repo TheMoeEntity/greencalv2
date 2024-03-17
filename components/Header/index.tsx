@@ -6,10 +6,11 @@ import { useRef, useState, useEffect } from "react";
 import Link from "next/link";
 import { Helpers } from "@/Helpers";
 import { useLinks } from "@/Helpers/hooks";
+import { useRouter } from "next/navigation";
 
 const Header = () => {
-  const [sidebar, setSideBar] = useState(false);
-  const { links, LinkAction } = useLinks();
+  const { push } = useRouter()
+  const { links, sidebar, setSideBar } = useLinks();
   const sideContent = useRef<HTMLDivElement>(null);
   const [sticky, setSticky] = useState("");
   const headerRef = useRef<HTMLDivElement>(null);
@@ -47,6 +48,11 @@ const Header = () => {
     }, 400);
   };
 
+  const linkAction = (link?: string): void => {
+    setSideBar(false);
+    link === 'home' ? push('/') : push('/' + link)
+  };
+
   return (
     <div className={styles.header}>
       <div
@@ -60,8 +66,8 @@ const Header = () => {
           <ul>
             {
               links.map((x, i) => (
-                <li key={i}>
-                  <Link href={'/' + x.href}>{x.name}</Link>
+                <li onClick={() => linkAction(x.href)} key={i}>
+                  {x.name}
                 </li>
               ))
             }
@@ -113,8 +119,8 @@ const Header = () => {
             {
               links.map((x, i) =>
               (
-                <li key={i}>
-                  <Link href={'/' + x.href}> {x.name} </Link>
+                <li onClick={() => linkAction(x.href)} key={i}>
+                  {x.name}
                 </li>
               ))
             }

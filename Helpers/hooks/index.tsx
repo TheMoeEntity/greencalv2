@@ -78,6 +78,7 @@ export const useCustomHero = (Link: any,
 }
 export const useLinks = () => {
   const router = useRouter();
+  const [sidebar, setSideBar] = useState(false);
   const [links, setLinks] = useState<linkType[]>(Helpers.links);
   const pathname = usePathname();
   useEffect(() => {
@@ -98,6 +99,7 @@ export const useLinks = () => {
     });
   }, [pathname]);
   const LinkAction = (page: string) => {
+    setSideBar(false)
     setLinks((currLink) => {
       const newLink = currLink.map((x) =>
         x.href === page
@@ -112,9 +114,8 @@ export const useLinks = () => {
       );
       return newLink;
     });
-    router.push(`/${page}`);
   };
-  return { links, LinkAction };
+  return { links, LinkAction, sidebar, setSideBar };
 };
 export const useScrollTop = () => {
   const pathname = usePathname();

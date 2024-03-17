@@ -8,7 +8,7 @@ export class Helpers {
     {
       name: "Home",
       isActive: false,
-      href: "",
+      href: 'home',
     },
     {
       name: "About",
