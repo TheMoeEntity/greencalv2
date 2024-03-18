@@ -1,5 +1,5 @@
 'use client'
-import React, { CSSProperties } from "react";
+import React, { CSSProperties, useState } from "react";
 import {
     MDBCarousel,
     MDBCarouselItem,
@@ -9,7 +9,7 @@ import {
     MDBIcon,
 } from "mdb-react-ui-kit";
 
-export default function App() {
+export default function Testimonials() {
     const buttonStyles: CSSProperties = {
         background: '#0C4949',
         color: 'white',
@@ -17,6 +17,13 @@ export default function App() {
         border: 'none',
         borderRadius: '4px',
         marginTop: '5px'
+    }
+    const [status, setStatus] = useState("")
+    const openVideo = (): void => {
+        setStatus("Video currently unavailable.")
+        setTimeout(() => {
+            setStatus('')
+        }, 2500);
     }
     return (
         <MDBContainer className="my-5">
@@ -31,17 +38,20 @@ export default function App() {
                     />
                     <MDBRow className="d-flex justify-content-center">
                         <MDBCol lg="8">
-                            <h5 className="mb-3"> KEPHA</h5>
-                            <p>Medical student, EBSU, Nigeria</p>
+                            <h5 className="mb-3">Kepha</h5>
+                            <p>Medical student (Co-founder, Greencal Foundation)</p>
                             <p className="text-muted">
                                 <MDBIcon fas icon="quote-left" className="pe-2" />
-                                {`I've `}witnessed the impact of Greencal {`Foundation's`} food outreach programs. They not only provide nourishment but also promote a healthy community, ensuring no child goes to bed hungry.
+                                As a medical student witnessing the healthcare struggles faced by many in Abakaliki, I knew I had to act. Greencal Foundation allows me to combine my medical knowledge with a passion for social justice. Working alongside Adum and our dedicated team, {`we're`} actively improving access to quality healthcare in underserved communities. Together, {`we're`} building a healthier Abakaliki, one step at a time.
                                 {" "}<MDBIcon fas icon="quote-right" className="pe-2" />
                             </p>
-                            <button style={{ ...buttonStyles }}>
+                            <button onClick={() => openVideo()} style={{ ...buttonStyles }}>
                                 <i></i>
                                 Watch Video
                             </button>
+                            <div className="title-color mt-3 font-weight-bold">
+                                {status}
+                            </div>
                         </MDBCol>
                     </MDBRow>
 
@@ -91,3 +101,4 @@ export default function App() {
         </MDBContainer>
     );
 }
+

@@ -1,9 +1,6 @@
 import styles from "./index.module.css";
 import logo from "../../public/images/greencal_white.png";
 import Image from "next/image";
-// import icon1 from "../../public/images/1.png";
-// import icon2 from "../../public/images/2.png";
-// import icon3 from "../../public/images/3.png";
 import Link from 'next/link'
 
 const Footer = () => {
@@ -51,7 +48,8 @@ const Footer = () => {
 
             </div>
             <div>
-              (+234) 811 617 7509 </div>
+              (+234) 811 617 7509 &nbsp; (234) 803 656 5354
+            </div>
           </div>
           <div>
             <div style={{ width: '50px' }} className={styles.footerIcons}>

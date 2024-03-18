@@ -212,3 +212,15 @@ export const useValidRoute = (pathname: string): boolean => {
   };
   return checkValid(pathname);
 };
+export const useReveal = (useInView: any) => {
+  const { ref, inView } = useInView();
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    if (inView) {
+      setVisible(true);
+    }
+  }, [inView]);
+  const { push } = useRouter()
+  return { push, visible, ref }
+}

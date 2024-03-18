@@ -7,21 +7,10 @@ import { useCustomHero } from "@/Helpers/hooks";
 import '../EventsPage/style.css'
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-
+import { Helpers } from "@/Helpers";
 
 const AboutPage = () => {
-    const leaders = [
-        {
-            name: "Adum Obinna",
-            position: "Founder",
-            info: 'Adum Obinna, a passionate philanthropist, Economics student and owner of BrillX, in Ebonyi State, established Greencal Foundation in memory of his inspiring mother. Witnessing her dedication to helping others ignited a fire in him to continue her legacy of giving back to the community.'
-        },
-        {
-            name: "Kepha",
-            position: "Co-founder",
-            info: 'Kepha, a dedicated medical student, brings his medical expertise and unwavering commitment to social justice to Greencal Foundation. Witnessing the struggles faced by many in Abakaliki firsthand fuels his drive to improve access to quality healthcare in underserved communities.'
-        }
-    ]
+
     const { customHero } = useCustomHero(Link, "ABOUT US", styles, motion, "banner.jpg")
     return (
         <div>
@@ -101,7 +90,7 @@ const AboutPage = () => {
                             <h2 className="title-color">Leadership</h2>
                         </div>
                         <Row xs={1} md={2} lg={2} className="g-4">
-                            {leaders.map((leader) => (
+                            {Helpers.leaders.map((leader) => (
                                 <Col key={leader.name}>
                                     <div className="leader-card text-center">
                                         {/* <img src={leader.imageUrl} alt={leader.name} className="leader-img" /> */}

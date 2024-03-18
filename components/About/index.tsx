@@ -6,20 +6,9 @@ import { useRouter } from "next/navigation";
 import shape from "../../public/images/shape-1.png";
 import { useInView } from "react-intersection-observer";
 import { useState, useEffect } from "react";
+import { useReveal } from "@/Helpers/hooks";
 const About = () => {
-  const { ref, inView } = useInView();
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    if (inView) {
-      setVisible(true);
-    }
-
-    // if (!inView) {
-    //   setVisible(false);
-    // }
-  }, [inView]);
-  const { push } = useRouter()
+  const { push, visible, ref } = useReveal(useInView)
 
   return (
     <div className={styles.about}>

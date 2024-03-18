@@ -5,26 +5,12 @@ import styles2 from '../../app/page.module.css'
 import Link from "next/link";
 import { motion } from "framer-motion";
 import FeaturedCard from "../Cards/Featured";
-import essay from '../../public/images/essay.jpg'
-import medical from '../../public/images/medical.jpeg'
 import '../EventsPage/style.css'
-import { eventCard } from "@/Helpers/types";
+import { Helpers } from "@/Helpers";
+
 
 const AllEvents = () => {
-    const events: eventCard[] = [
-        {
-            img: essay,
-            title: "Greencal Foundation Uplifts Students Through Annual Essay Competition",
-            content: "For graduating secondary school students preparing for their SSCE or NECO exams, Greencal Foundation's essay competition provides a unique opportunity...",
-            comingSoon: false
-        },
-        {
-            img: medical,
-            title: "Greencal Foundation Organizes First Medical Outreach at Iboko, Izzi.",
-            content: "Event coming soon. ",
-            comingSoon: true
-        },
-    ]
+
     const { customHero } = useCustomHero(Link, "EVENTS", styles, motion, "outreach6.jpg")
     return (
         <div>
@@ -34,7 +20,7 @@ const AllEvents = () => {
                 <p className="text-center">Greencal Foundation is dedicated to empowering our community through various initiatives. <br /> {`Here's `}a glimpse into some of our recent events.</p>
                 <div className={styles2.grid}>
                     <ul className="px-1 py-0 list-group list-group-horizontal position-relative overflow-scroll d-flex w-100 mb-5">
-                        {events.map((x, i) => (
+                        {Helpers.events.map((x, i) => (
                             <li
                                 className="list-group-item mx-3 px-0 py-o border-0"
                                 key={i}

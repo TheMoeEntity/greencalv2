@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import About from "@/components/About";
 import FundRaisers from "@/components/FundRaisers";
 import Testimonials from "@/components/Testimonials";
+import '../components/EventsPage/style.css'
 
 
 export default function Home() {

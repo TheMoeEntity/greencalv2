@@ -328,7 +328,7 @@ header.masthead {
 .scrollTop {
   width: 40px;
   height: 40px;
-  background-color: #ffff;
+  background-color: #0c4949d5;
   position: fixed;
   bottom: -20px;
   opacity: 0;
@@ -341,6 +341,11 @@ header.masthead {
   transition: 0.4s;
   z-index: 1000;
   box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
+}
+
+.scrollTop i {
+  color: whitesmoke;
+  font-size: 25px;
 }
 
 header.masthead:before {
