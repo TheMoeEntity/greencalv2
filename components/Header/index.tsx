@@ -66,7 +66,7 @@ const Header = () => {
           <ul>
             {
               links.map((x, i) => (
-                <li onClick={() => linkAction(x.href)} key={i}>
+                <li className={x.isActive ? styles.active : ""} onClick={() => linkAction(x.href)} key={i}>
                   {x.name}
                 </li>
               ))
@@ -119,7 +119,7 @@ const Header = () => {
             {
               links.map((x, i) =>
               (
-                <li onClick={() => linkAction(x.href)} key={i}>
+                <li className={x.isActive ? styles.active : ""} onClick={() => linkAction(x.href)} key={i}>
                   {x.name}
                 </li>
               ))

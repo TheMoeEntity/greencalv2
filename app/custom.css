@@ -628,7 +628,7 @@ textarea.form-control {
 
 .ftco-tab-nav li a.active {
     background: none !important;
-    color: black !important;
+    color: black;
     border: 2px solid #000;
 }
 

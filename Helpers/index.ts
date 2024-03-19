@@ -35,8 +35,8 @@ export class Helpers {
   static links: linkType[] = [
     {
       name: "Home",
-      isActive: false,
-      href: 'home',
+      isActive: true,
+      href: '',
     },
     {
       name: "About",

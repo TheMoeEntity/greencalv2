@@ -7,7 +7,7 @@
 }
 
 .header a {
-    color: black !important;
+    color: black;
 }
 
 .header a:hover {
@@ -75,6 +75,10 @@
     transition: 0.7s;
 }
 
+.sidecontent>ul>li.active {
+    color: #A2CA62 !important;
+}
+
 .links>ul>li {
     position: relative;
     height: 110px;
@@ -84,9 +88,6 @@
     padding-top: 45px;
 }
 
-.links>ul>li:hover {
-    color: #0C4949;
-}
 
 .links>ul>li:hover .dropdn {
     max-height: fit-content;
@@ -97,6 +98,18 @@
 .multiple:hover .mores {
     padding: 15px 0px;
     max-height: fit-content;
+}
+
+.links>ul>li:first-child.active {
+    color: #A2CA62 !important;
+}
+
+.links>ul>li.active {
+    color: #a2ca62 !important;
+}
+
+.links>ul>li:hover {
+    color: #a2ca62 !important;
 }
 
 .dropdn {
@@ -321,10 +334,6 @@
     font-weight: 500;
     font-size: 16px;
     cursor: pointer;
-}
-
-.headerTwo>div>ul>li:nth-child(1) {
-    color: #0C4949;
 }
 
 .headerTwo>div>div {
