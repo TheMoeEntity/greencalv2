@@ -16,7 +16,7 @@ const FeaturedCard = ({
     <div className={styles.featured}>
       <div className={styles.img}>
         <Image
-          alt="Card Picture"
+          alt="Image of our event and initiatives"
           style={{ objectFit: "cover" }}
           src={img}
           fill

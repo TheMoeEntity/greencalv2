@@ -62,7 +62,7 @@ const About = () => {
         >
           <Image
             src={man}
-            alt="card-image"
+            alt="One of our school outreach programs"
             style={{ objectFit: 'cover' }}
             fill
             quality={100}
@@ -79,7 +79,7 @@ const About = () => {
             <div>
               <Image
                 src={shape}
-                alt="card-image"
+                alt="blob shape"
                 style={{ objectFit: 'cover' }}
                 fill
                 quality={100}

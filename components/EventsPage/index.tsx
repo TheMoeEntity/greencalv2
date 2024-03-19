@@ -27,7 +27,7 @@ const EventsPage = () => {
 
                                 <div className="col-lg-12 mb-5">
                                     <div className="single-blog-item">
-                                        <img src="images/blog/blog-1.jpg" alt="" className="img-fluid" />
+                                        <img src="images/blog/blog-1.jpg" alt="Fluid image for blog section" className="img-fluid" />
 
                                         <div className="blog-item-content mt-5">
                                             <div className="blog-item-meta mb-3">
@@ -82,7 +82,7 @@ const EventsPage = () => {
 
                                             <>
                                                 <h2 className='mb-4 text-md mt-5 mb-5'>A Commitment to Education and Community Development:</h2>
-                                                <a href="#!"><img className="img-fluid" src="/images/essay.jpg" alt="..." /></a>
+                                                <a href="#!"><img className="img-fluid" src="/images/essay.jpg" alt="Essay competition winner" /></a>
                                                 <span className="caption text-muted">To go places and do things that have never been done before – {`that’s `}what living is all about.</span>
                                                 <p className="my-4">
                                                     Greencal {`Foundation's`} annual essay competition is a testament to the {`organization's`} unwavering commitment to education. By providing scholarships and fostering a culture of academic excellence, Greencal Foundation empowers students to reach their full potential and pave the way for a brighter future.

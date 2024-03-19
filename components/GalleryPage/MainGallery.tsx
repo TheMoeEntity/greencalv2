@@ -18,7 +18,7 @@ const MainGallery = () => {
                     <div className="col-12 col-md-6 col-lg-3 bsb-project-1-item">
                         <figure className="rounded rounded-4 overflow-hidden bsb-overlay-hover">
                             <a href="#!">
-                                <img className="img-fluid bsb-scale-up bsb-hover-scale" src="/images/essay.jpg" alt="Photography" />
+                                <img className="img-fluid bsb-scale-up bsb-hover-scale" src="/images/essay.jpg" alt="Greencal gallery" />
                             </a>
                             <figcaption>
                                 <h3 className="text-dark bsb-hover-fadeInLeft">Scholarships</h3>
@@ -30,7 +30,7 @@ const MainGallery = () => {
                     <div className="col-12 col-md-6 col-lg-6 bsb-project-1-item">
                         <figure className="rounded rounded-4 overflow-hidden bsb-overlay-hover">
                             <a href="#!">
-                                <img className="img-fluid bsb-scale bsb-hover-scale-up" src="/images/banner.jpg" alt="Inspiration" />
+                                <img className="img-fluid bsb-scale bsb-hover-scale-up" src="/images/banner.jpg" alt="Greencal gallery" />
                             </a>
                             <figcaption>
                                 <h3 className="bsb-hover-fadeInUp text-dark py-2">Outreach</h3>
@@ -42,7 +42,7 @@ const MainGallery = () => {
                     <div className="col-12 col-md-6 col-lg-3 bsb-project-1-item">
                         <figure className="rounded rounded-4 overflow-hidden bsb-overlay-hover">
                             <a href="#!">
-                                <img className="img-fluid bsb-scale-up bsb-hover-scale" src="/images/outreach8.jpg" alt="Nature" />
+                                <img className="img-fluid bsb-scale-up bsb-hover-scale" src="/images/outreach8.jpg" alt="Greencal gallery" />
                             </a>
                             <figcaption>
                                 <h3 className="text-dark bsb-hover-fadeInLeft">Community</h3>
@@ -54,7 +54,7 @@ const MainGallery = () => {
                     <div className="col-12 col-md-6 col-lg-3 bsb-project-1-item">
                         <figure className="rounded rounded-4 overflow-hidden bsb-overlay-hover">
                             <a href="#!">
-                                <img className="img-fluid bsb-scale-up bsb-hover-scale" src="/images/medical.jpeg" alt="Design" />
+                                <img className="img-fluid bsb-scale-up bsb-hover-scale" src="/images/medical.jpeg" alt="Greencal gallery" />
                             </a>
                             <figcaption>
                                 <h3 className="text-dark bsb-hover-fadeInLeft">Medical outreach</h3>
@@ -66,7 +66,7 @@ const MainGallery = () => {
                     <div className="col-12 col-md-6 col-lg-3 bsb-project-1-item">
                         <figure className="rounded rounded-4 overflow-hidden bsb-overlay-hover">
                             <a href="#!">
-                                <img className="img-fluid bsb-scale-up bsb-hover-scale" src="/images/banner3.jpg" alt="Fashion" />
+                                <img className="img-fluid bsb-scale-up bsb-hover-scale" src="/images/banner3.jpg" alt="Greencal gallery" />
                             </a>
                             <figcaption>
                                 <h3 className="text-dark bsb-hover-fadeInLeft">Community</h3>
@@ -78,7 +78,7 @@ const MainGallery = () => {
                     <div className="col-12 col-md-6 col-lg-3 bsb-project-1-item">
                         <figure className="rounded rounded-4 overflow-hidden bsb-overlay-hover">
                             <a href="#!">
-                                <img className="img-fluid bsb-scale-up bsb-hover-scale" src="/images/banner2.jpg" alt="Food" />
+                                <img className="img-fluid bsb-scale-up bsb-hover-scale" src="/images/banner2.jpg" alt="Greencal gallery" />
                             </a>
                             <figcaption>
                                 <h3 className="text-dark bsb-hover-fadeInLeft">Scholarships</h3>
@@ -90,7 +90,7 @@ const MainGallery = () => {
                     <div className="col-12 col-md-6 col-lg-3 bsb-project-1-item">
                         <figure className="rounded rounded-4 overflow-hidden bsb-overlay-hover">
                             <a href="#!">
-                                <img className="img-fluid bsb-scale-up bsb-hover-scale" src="/images/medical.jpeg" alt="Health " />
+                                <img className="img-fluid bsb-scale-up bsb-hover-scale" src="/images/medical.jpeg" alt="Greencal gallery " />
                             </a>
                             <figcaption>
                                 <h3 className="text-dark bsb-hover-fadeInLeft">Medical Outreach</h3>
@@ -102,7 +102,7 @@ const MainGallery = () => {
                     <div className="col-12 col-md-6 col-lg-3 bsb-project-1-item">
                         <figure className="rounded rounded-4 overflow-hidden bsb-overlay-hover">
                             <a href="#!">
-                                <img className="img-fluid bsb-scale-up bsb-hover-scale" src="images/card.jpg" alt="Nature" />
+                                <img className="img-fluid bsb-scale-up bsb-hover-scale" src="images/card.jpg" alt="Greencal gallery" />
                             </a>
                             <figcaption>
                                 <h3 className="text-dark bsb-hover-fadeInLeft">Essay competition</h3>
@@ -114,7 +114,7 @@ const MainGallery = () => {
                     <div className="col-12 col-md-6 col-lg-3 bsb-project-1-item">
                         <figure className="rounded rounded-4 overflow-hidden bsb-overlay-hover">
                             <a href="#!">
-                                <img className="img-fluid bsb-scale-up bsb-hover-scale" src="/images/outreach6.jpg" alt="Design" />
+                                <img className="img-fluid bsb-scale-up bsb-hover-scale" src="/images/outreach6.jpg" alt="Greencal gallery" />
                             </a>
                             <figcaption>
                                 <h3 className="text-dark bsb-hover-fadeInLeft">Essay Competiton</h3>

@@ -105,7 +105,7 @@ const Header = () => {
           <Link href={`/`}>
             <Image
               src={logo}
-              alt="card-image"
+              alt="greencal logo"
               style={{ objectFit: 'cover' }}
               fill
               quality={100}
