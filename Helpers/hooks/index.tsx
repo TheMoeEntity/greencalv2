@@ -64,7 +64,7 @@ export const useCustomHero = (Link: any,
                   We are dedicated to improving the lives of those facing illness, hardship, and limited opportunities.
                 </p>
                 {
-                  title !== "DONATIONS" && <Link href={'/donate'}><button>DONATE NOW</button></Link>
+                  title !== "DONATIONS" && <button>DONATE NOW</button>
                 }
 
               </motion.div>
