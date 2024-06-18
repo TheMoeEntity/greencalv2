@@ -24,7 +24,7 @@ const AboutPage = () => {
                                     <h2 className="title-color">About Greencal Foundation.</h2>
                                 </div>
                                 <div className="col-lg-8">
-                                    <p>Greencal Foundation is a non-profit organization based in Abakaliki, Ebonyi State, Nigeria. We are dedicated to improving the lives of those facing illness, hardship, and limited opportunities.</p>
+                                    <p>Greencal Foundation is a non-profit organization based in Abakaliki, Ebonyi State, Nigeria. We are dedicated to creating pathways to success through education and promoting well-being among the financially challenged and less privileged communities.</p>
                                 </div>
                             </div>
                         </div>

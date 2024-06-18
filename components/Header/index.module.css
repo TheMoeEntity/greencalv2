@@ -266,7 +266,7 @@
     height: 120px;
     background-color: white;
     display: flex;
-    color: black;
+    color: #333333;
     align-items: center;
     flex-flow: row wrap;
     justify-content: space-between;
